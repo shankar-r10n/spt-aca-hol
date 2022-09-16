@@ -16,9 +16,9 @@ BUT all of this was *still* a surmise ; Martha has looped in and tasked two of h
 
 Alice is a Kubernetes expert having worked with several of SUM's client on anything ranging from large DIY Kubernetes clusters to vendor managed Kubernets offerings including the Azure Kubernetes Service (AKS) from Microsoft. She has recently aced the Certified Kubernetes Administrator & Certified Kuberneted Application Developer - exams from the Linux Foundation.
 
-Bob is a polyglot developer - addressing  the full-stack cloud native application development. He is familiar with containerization & orchestration but would rather spend his time building high-performant microservices and applying the needed development rigor driven by wel-adopted software development patterns.
+Bob is a polyglot developer - addressing  the full-stack cloud native application development. He is familiar with containerization & orchestration but would rather spend his time building high-performant microservices and applying the needed development rigor driven by well-adopted software development patterns.
 
-Alice and Bob - proceed on the quest set forth my Martha.
+Alice and Bob - proceed on the quest set forth by Martha.
 
 ## The First Take & next steps
 
