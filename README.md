@@ -1,7 +1,7 @@
 # Azure Container Apps Hands-on-Labs
 
 ## Overview 
-Martha, the CTO of the boutique technology consulting firm - StartUps & More (SUM), requires  her consultants to be conversant with emergent technologies & methodologies at a consistent yet fast pace . One of the key decisions she makes with the  advent of every new technology is to determine - it's fit-to-purpose & efficacy before having her consultants delve deeper themselves and consequently having them help their firm's clients.
+Martha, the CTO of the boutique technology consulting firm - StartUps & More Inc. (SUM Inc.), requires  her consultants to be conversant with emergent technologies & methodologies at a consistent yet fast pace . One of the key decisions she makes with the  advent of every new technology is to determine - it's fit-to-purpose & efficacy before having her consultants delve deeper themselves and consequently having them help their firm's clients.
 
 Azure Container Apps (ACA), the newest offering from Microsoft, providing a serverless platform for running containerized microservices is on the top of Martha's emerging tech list for a few  important reasons that she has heard so far -
 1. ACA can empower developers to build cloud-native solutions focusing on their apps rather than cloud infrastructure. 
