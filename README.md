@@ -14,7 +14,7 @@ Azure Container Apps (ACA), the newest offering from Microsoft, providing a serv
 
 BUT all of this was *still* a surmise ; Martha has looped in and tasked two of her top engineers Alice and Bob to conduct a timeboxed evaluation resulting in key findings based on hands-on evaluation. This time-boxed evaluation has proven to be a stategic advantage to Martha's firm for many years.
 
-Alice is a Kubernetes expert having worked with several of SUM's client on anything ranging from large DIY Kubernetes clusters to vendor managed Kubernets offerings including the Azure Kubernetes Service (AKS) from Microsoft. She has recently aced the Certified Kubernetes Administrator & Certified Kuberneted Application Developer - exams from the Linux Foundation.
+Alice is a Kubernetes expert having worked with several of SUM Inc.'s clients on anything  - ranging from large DIY Kubernetes clusters to vendor managed Kubernets offerings including the Azure Kubernetes Service (AKS) from Microsoft. She has recently aced the Certified Kubernetes Administrator & Certified Kuberneted Application Developer - exams from the Linux Foundation.
 
 Bob is a polyglot developer - addressing  the full-stack cloud native application development. He is familiar with containerization & orchestration but would rather spend his time building high-performant microservices and applying the needed development rigor driven by well-adopted software development patterns.
 
