@@ -12,7 +12,7 @@ Azure Container Apps (ACA), the newest offering from Microsoft, providing a serv
 
    *Serverless PaaS powered by CNCF projects to enable developers - sounded like an attractive proposition*
 
-BUT all of this was *still* a surmise ; Martha has looped in and tasked two of her top engineers Alice and Bob to conduct a timeboxed evaluation resulting in key findings based on hand-on evaluation. This time-boxed evaluation has proven to be a stategic advantage to Martha's firm for many years.
+BUT all of this was *still* a surmise ; Martha has looped in and tasked two of her top engineers Alice and Bob to conduct a timeboxed evaluation resulting in key findings based on hands-on evaluation. This time-boxed evaluation has proven to be a stategic advantage to Martha's firm for many years.
 
 Alice is a Kubernetes expert having worked with several of SUM's client on anything ranging from large DIY Kubernetes clusters to vendor managed Kubernets offerings including the Azure Kubernetes Service (AKS) from Microsoft. She has recently aced the Certified Kubernetes Administrator & Certified Kuberneted Application Developer - exams from the Linux Foundation.
 
