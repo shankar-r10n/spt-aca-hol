@@ -58,7 +58,7 @@ Utilize the UI to create, understand and see the terminologies (Environments, VN
 
 ### Lab 3 – Deploy and test a workload.
 
-*A representative workload (using both UI and backend API) *
+*A representative workload (using both UI and backend API)*
 
 *To be done*
 
