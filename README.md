@@ -44,7 +44,7 @@ Alice and Bob - proceed on the quest set forth by Martha.
 a. Create the environment & test a simple container app using the Azure Portal.   
 b. Utiize multiple revisions and test Traffic Split functionality with 2 different versions of the same app.  
 As part of the environment creation & deployment  get familiar with the UI and learn the Azure Container App specific terminologies & features.  
-  
+  ***
 **1.a. Create a Container App environment & test a simple app**
 
 In the Azure Portal, click on [+ Create a Resource] and type in "Container App"
@@ -54,7 +54,7 @@ In the Azure Portal, click on [+ Create a Resource] and type in "Container App"
 
 ![CreateACA](images/2_CreateACA.png)
 
-
+ ***
 
 
 [Create Container App - Basics] tab  
@@ -74,7 +74,8 @@ Container Apps Environment
 Choose the [Region] you want to deploy to from the drop-down of available regions.
 
 As it is the first time, click on the [Create new] hyperlink to create a new [Container Apps Environment]
-
+ ***
+ 
 ![CreateEnvBasics](images/4_CCA_Env_Basics.png)
   
 **[Create Container Apps Environment - Basics] tab**
@@ -86,14 +87,15 @@ Provide an [Environment name]
 Zone Redundancy (ZR) - The decision to make this Container App Environment - zone redundant is to be made at deployment time. The Container App Environment cannot be made zone redundant If NOT deployed as zone redundant at the time of creation.
 For Lab 1 - let us leave [Zone redundancy] as [Disabled]
 
-
+ ***
 [Create Container Apps Environment - Monitoring] tab
 
 A [Log Analytics workspace] name is pre-populated for you. You can choose to [Create new] using the link.
 
 
 ![CreateCCAEnvMonitoring](images/5_CCA_Env_Monitoring.png)
-
+ ***
+ 
 **[Create Container Apps Environment - Networking] tab**
 
 Virtual Network
@@ -110,7 +112,9 @@ Now, revert to choosing [No] and click [Create]
 
 ![CreateCCAEnvNetworking](images/6_CCA_Env_Networking.png)
 
-
+ ***
+ 
+ 
   **[Create Container Apps Environment - App Settings] tab**
 
 ![CreateCCAAppsettings](images/7_CCA_AppSettings.png)
@@ -137,27 +141,34 @@ Application ingress settings
 [Ingress traffic] - Select the [Accepting traffic from anywhere] button.
 
 [Target port]      - Enter 80
-
+ ***
+ 
+ 
 
  **Click through [Next: Tags] and then go to [Next: Review + create >] & click on [Create]**
 
 ![CreateCCACreate](images/9_CCA_Create.png)
-
+ ***
+ 
+ 
 **In your resource group observe that the following resources are created** 
 
 ![CreateCCACreateResources](images/10_CreatedResources_in_RG.png)
-
+ ***
+ 
+ 
 CLick on the [Container App] resource and observe the Application URI and click on it   
 
 ![CreateCCAAppURI](images/11_ContainerApp_AppURI.png)
-
+ ***
+ 
 
 
 **After you click the Application URI - you should see the following displayed in your browser**  
 
 ![CreateCCACreatedApp](images/12_App_A_Blue.png)
 
-
+ ***
 
 
 
