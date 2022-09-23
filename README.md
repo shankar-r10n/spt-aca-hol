@@ -1,7 +1,7 @@
 # Azure Container Apps Hands-on-Labs
 
 ## Overview 
-Martha, the CTO of the boutique technology consulting firm - StartUps & More Inc. (SUM Inc.), requires  her consultants to be conversant with emergent technologies & methodologies at a consistent yet fast pace . One of the key decisions she makes with the  advent of every new technology is to determine - it's fit-to-purpose & efficacy - before having her consultants delve deeper themselves and consequently having them help their firm's clients.
+Martha, the CTO of the boutique cloud-native technologies consulting firm - StartUps & More Inc. (SUM Inc.), requires  her consultants to be conversant with emergent technologies & methodologies at a consistent yet fast pace. One of the key decisions she makes with the  advent of every new technology is to determine - it's fit-to-purpose & efficacy - before having her consultants delve deeper themselves & consequently having them help their firm's clients.
 
 Azure Container Apps (ACA) - the newest offering from Microsoft providing a serverless platform for running containerized microservices  - is on the top of Martha's emerging tech list for a few  important reasons that she has heard so far -
 1. ACA can empower developers to build cloud-native solutions focusing on their apps rather than cloud infrastructure. 
@@ -12,11 +12,12 @@ Azure Container Apps (ACA) - the newest offering from Microsoft providing a serv
 
    *Serverless PaaS powered by CNCF projects to enable developers - sounded like an attractive proposition*
 
-BUT all of this was *still* a surmise ; Martha has looped in and tasked two of her top engineers Alice and Bob to conduct a timeboxed evaluation resulting in key findings based on hands-on evaluation. This time-boxed evaluation has proven to be a stategic advantage to Martha's firm for many years.
+BUT all of this was *still* a surmise ; Martha has looped in and tasked two of her top engineers Alice and Bob to conduct a timeboxed evaluation resulting in key findings based on hands-on evaluation. 
+This time-boxed evaluation methodology has proven to be a strategic advantage to Martha's firm for many years.
 
-Alice is a Kubernetes expert having worked with several of SUM Inc.'s clients on anything  - ranging from large DIY Kubernetes clusters to vendor managed Kubernets offerings including the Azure Kubernetes Service (AKS) from Microsoft. She has recently aced the Certified Kubernetes Administrator & Certified Kuberneted Application Developer - exams from the Linux Foundation.
+Alice is a Kubernetes expert having worked with several of SUM Inc.'s clients on anything ranging from - large DIY Kubernetes clusters - to - vendor managed Kubernetes offerings including the Azure Kubernetes Service (AKS) from Microsoft. She has recently aced the Certified Kubernetes Administrator & Certified Kuberneted Application Developer - exams from the Linux Foundation.
 
-Bob is a polyglot developer - addressing  the full-stack cloud native application development. He is familiar with containerization & orchestration but would rather spend his time building high-performant microservices and applying the needed development rigor driven by well-adopted software development patterns.
+Bob is a polyglot developer - addressing  the full-stack of cloud native application development. He is familiar with containerization & orchestration but would rather spend his time building high-performant microservices and applying the needed development rigor driven by well-adopted software development patterns.
 
 Alice and Bob - proceed on the quest set forth by Martha.
 
@@ -37,11 +38,13 @@ Alice and Bob - proceed on the quest set forth by Martha.
 
 
 ### Lab 1 – Create an Azure Container Apps service using the Azure Portal.
-Utilize the UI to create, understand and see the terminologies (Environments, VNet et.al) in action.
 
-*In Progress*
+**Objectives:**
+1. Create the environment & test a simple container app using the Azure Portal.
+2. Utiize multiple revisions and test Traffic Split functionality with 2 different versions of the same app.
+3. Learn the Azure Container App specific terminologies and tenets as part of the environment creation excecise.
 
-*1. Screenshots and observations based on Portal. Setting up the stage for further activity , iterartion within  the lab & for the next of labs*
+
 
 
 ### Lab 2 – Create an ACA service – scripted mode
