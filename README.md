@@ -48,7 +48,8 @@ As part of the environment creation & deployment  get familiar with the UI and l
 
 In the Azure Portal, click on [+ Create a Resource] and type in "Container App"
 
-<<Insert Image 1>>
+
+![My Image](images/1_CreateResource.png)
 
 <<Insert Image 2>>
 
