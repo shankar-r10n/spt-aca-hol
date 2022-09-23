@@ -232,11 +232,41 @@ az containerapp env create \
 # Navigate to the FQDN returned
 
 ```
-### Lab 3 – Deploy and test a workload.
+### Lab 3 – Deploy and test 2 Container Apps with one calling the other ... 
 
-*A representative workload (using both UI and backend API)*
+We use the same ACA Environment and environment variables created earlier in [Lab 2] to deploy 2 additonal Container Apps.  
 
-*To be done*
+One  is a DotNet app. &  the other is a NodeJS app - with the NodeJS app being exposed for public access. The Dotnet app has internal ingress only.
+The FQDN of the DotNet app is set as an Environment Variable - which is subsequently passed to and utilized by the NodeJS app.
+
+
+```
+# Deploy the container-2-dotnet dotnet-app
+az containerapp create \
+  --name dotnet-app \
+  --resource-group $RESOURCE_GROUP \
+  --environment $CONTAINERAPPS_ENVIRONMENT \
+  --image 'ghcr.io/azure-samples/container-apps-connect-multiple-apps/dotnet:main' \
+  --target-port 80 \
+  --ingress 'internal'
+
+DOTNET_FQDN=$(az containerapp show \
+  --resource-group $RESOURCE_GROUP \
+  --name dotnet-app \
+  --query configuration.ingress.fqdn -o tsv)
+
+# Deploy the container-1-node node-app
+az containerapp create \
+  --name node-app \
+  --resource-group $RESOURCE_GROUP \
+  --environment $CONTAINERAPPS_ENVIRONMENT \
+  --image 'ghcr.io/azure-samples/container-apps-connect-multiple-apps/node:main' \
+  --target-port 3000 \
+  --ingress 'external' \
+  --environment-variables DOTNET_FQDN=$DOTNET_FQDN \
+  --query configuration.ingress.fqdn
+```
+
 
 
 ### Lab 4 – KEDA in action with Scale to Zero
