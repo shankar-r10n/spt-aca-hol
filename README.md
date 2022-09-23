@@ -73,7 +73,11 @@ Container Apps Environment
 
 Choose the [Region] you want to deploy to from the drop-down of available regions.
 
-As it is the first time, click on the [Create new] hyperlink to create a new [Container Apps Environment]
+**As it is the first time, click on the [Create new] hyperlink to create a new [Container Apps Environment]**
+
+
+**Note:** _An environment in Azure Container Apps creates a secure boundary around a group of container apps. Container Apps deployed to the same environment are deployed in the same virtual network and write logs to the same Log Analytics workspace._
+
  ***
  
 ![CreateEnvBasics](images/4_CCA_Env_Basics.png)
@@ -179,16 +183,55 @@ CLick on the [Container App] resource and observe the Application URI and click 
 
 ### Lab 2 – Create an ACA service – scripted mode
 
-*Create/ utilize a shell script that enables az cli creation.* 
+```
 
-*In Progress* 
+## Deploy with CLI
 
-*Running parallel to Lab 1 - extracting the [az cli] commands to achieve everything in Lab 1 in cli-driven manner; makes notes on what can be done only in the portal*
+# Login to the CLI
+az login
 
-*(Optional) Achieve the same objective as Lab 1 with Bicep. Start lab by Intro and hands-on simple sample of Bicep. *
+# Install the ACA extension for the CLI
+az extension add --name containerapp --upgrade
 
-*To be done*
+# Register the Microsoft.App namespace
+az provider register --namespace Microsoft.App
 
+# Register the Microsoft.OperationalInsights provider for the Azure Monitor Log Analytics workspace if you have not used it before.
+az provider register --namespace Microsoft.OperationalInsights
+
+# Set the following environment variables
+
+RESOURCE_GROUP="your-container-app-name"
+LOCATION="eastus"
+CONTAINERAPPS_ENVIRONMENT="your-environment"
+
+# Create a resource group to organize the services related to your new container app
+
+az group create \
+  --name $RESOURCE_GROUP \
+  --location $LOCATION
+  
+# Create the ACA Environment
+
+az containerapp env create \
+  --name $CONTAINERAPPS_ENVIRONMENT \
+  --resource-group $RESOURCE_GROUP \
+  --location $LOCATION
+  
+ # Create the Container App
+ 
+ az containerapp create \
+  --image "docker.io/dockerr10n/aca-hol-image:A" \
+  --name my-container-app \
+  --resource-group $RESOURCE_GROUP \
+  --environment $CONTAINERAPPS_ENVIRONMENT
+  --target-port 80 \
+  --ingress 'external' \
+  --query configuration.ingress.fqdn
+
+# Navigate to the FQDN returned
+
+```
 ### Lab 3 – Deploy and test a workload.
 
 *A representative workload (using both UI and backend API)*
