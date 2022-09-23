@@ -130,8 +130,15 @@ Application ingress settings
 [Ingress traffic] - Select the [Accepting traffic from anywhere] button.
 
 [Target port]      - Enter 80
- 
- 
+
+
+Click through [Next: Tags] and then go to [Next: Review + create >] & click on [Create]
+
+<<Insert image of Overview pane>>
+
+<<Insert image of web page with blue background and A>>
+
+
 
 
 
