@@ -68,12 +68,13 @@ Provide a [Container app name] of your choice _e.g. aca-hol-demo_
 
 Container Apps Environment
 
-Choose the [Region] you want to deploy to from the drop-doen of available regions.
+Choose the [Region] you want to deploy to from the drop-down of available regions.
 
 As it is the first time, click on the [Create new] hyperlink to create a new [Container Apps Environment]
 
 <<Insert image of Create Container Apps Environment - Basics>> tab
-[Create Container Apps Environment - Basics] tab
+**[Create Container Apps Environment - Basics] tab**
+
 Environment details
 
 Provide an [Environment name] 
@@ -103,6 +104,34 @@ Now, revert to choosing [No] and click [Create]
 
 <<Insert image of Create Container Apps Environment - Networking tab>>
 
+
+  **[Create Container Apps Environment - App Settings] tab**
+
+<<Insert image of Create Container Apps Environment - App Settings tab>>
+
+Uncheck the [Use quickstart image] check-box as we want to deploy our own simple app; the container image of our app is in the public Docker Hub.
+
+[Container details]
+  
+[Name] Provide a name for the container
+[Image Source] Select [Docker Hub or other registries]
+[Image type]   Select [Public]
+  
+ [Registry login server] can be retained as [docker.io]
+ 
+ [Image and tag] Enter the value [ dockerr10n/aca-hol-image:A ] 
+  
+ [Container resource allocation] - FOr this lab retain the default first value but observe that there is a set of choices that can be made based on your container's  CPU and memory requirements.
+
+Application ingress settings
+
+[HTTP Ingress]    - Check/ enable the checkbox
+
+[Ingress traffic] - Select the [Accepting traffic from anywhere] button.
+
+[Target port]      - Enter 80
+ 
+ 
 
 
 
