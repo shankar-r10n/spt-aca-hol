@@ -40,16 +40,17 @@ Alice and Bob - proceed on the quest set forth by Martha.
 ### Lab 1 – Create an Azure Container Apps service using the Azure Portal.
 
 **Objectives:**
-a. Create the environment & test a simple container app using the Azure Portal.
-b. Utiize multiple revisions and test Traffic Split functionality with 2 different versions of the same app.
-As part of the environment creation & deployment  get familiar with the UI and learn the Azure Container App specific terminologies & features.
 
-1.a. Create a Container App environment & test a simple app
+a. Create the environment & test a simple container app using the Azure Portal.   
+b. Utiize multiple revisions and test Traffic Split functionality with 2 different versions of the same app.  
+As part of the environment creation & deployment  get familiar with the UI and learn the Azure Container App specific terminologies & features.  
+  
+**1.a. Create a Container App environment & test a simple app**
 
 In the Azure Portal, click on [+ Create a Resource] and type in "Container App"
 
 
-![My Image](images/1_CreateResource.png)
+![Create Resource](images/1_CreateResource.png)
 
 <<Insert Image 2>>
 
