@@ -52,13 +52,14 @@ In the Azure Portal, click on [+ Create a Resource] and type in "Container App"
 
 ![Create Resource](images/1_CreateResource.png)
 
-<<Insert Image 2>>
+![CreateACA](images/2_CreateACA.png)
 
 
 
 
-[Create Container App - Basics] tab
-<< Insert pre-filled Basics tab image>>
+[Create Container App - Basics] tab  
+
+![CreateCCABasics](images/3_CCA_Basics.png)
 
 
 Project Details
@@ -74,7 +75,7 @@ Choose the [Region] you want to deploy to from the drop-down of available region
 
 As it is the first time, click on the [Create new] hyperlink to create a new [Container Apps Environment]
 
-<<Insert image of Create Container Apps Environment - Basics>> tab
+![CreateEnvBasics](images/4_CCA_Env_Basics.png)
   
 **[Create Container Apps Environment - Basics] tab**
 
@@ -89,9 +90,11 @@ For Lab 1 - let us leave [Zone redundancy] as [Disabled]
 [Create Container Apps Environment - Monitoring] tab
 
 A [Log Analytics workspace] name is pre-populated for you. You can choose to [Create new] using the link.
-<<Insert image of Create Container Apps Environment - MOnitoring tab>>
 
-[Create Container Apps Environment - Networking] tab
+
+![CreateCCAEnvMonitoring](images/5_CCA_Env_Monitoring.png)
+
+**[Create Container Apps Environment - Networking] tab**
 
 Virtual Network
 
@@ -105,12 +108,13 @@ The choice to have the Virtual IP as [Internal] only with the endpoint being an 
 
 Now, revert to choosing [No] and click [Create]
 
-<<Insert image of Create Container Apps Environment - Networking tab>>
+![CreateCCAEnvNetworking](images/6_CCA_Env_Networking.png)
 
 
   **[Create Container Apps Environment - App Settings] tab**
 
-<<Insert image of Create Container Apps Environment - App Settings tab>>
+![CreateCCAAppsettings](images/7_CCA_AppSettings.png)
+![CreateCCAAppsettings](images/8_CCA_AppSettings.png)
 
 Uncheck the [Use quickstart image] check-box as we want to deploy our own simple app; the container image of our app is in the public Docker Hub.
 
@@ -135,11 +139,24 @@ Application ingress settings
 [Target port]      - Enter 80
 
 
-Click through [Next: Tags] and then go to [Next: Review + create >] & click on [Create]
+ **Click through [Next: Tags] and then go to [Next: Review + create >] & click on [Create]**
 
-<<Insert image of Overview pane>>
+![CreateCCACreate](images/9_CCA_Create.png)
 
-<<Insert image of web page with blue background and A>>
+**In your resource group observe that the following resources are created** 
+
+![CreateCCACreateResources](images/10_CreatedResources_in_RG.png)
+
+CLick on the [Container App] resource and observe the Application URI and click on it   
+
+![CreateCCAAppURI](images/11_ContainerApp_AppURI.png)
+
+
+
+**After you click the Application URI - you should see the following displayed in your browser**  
+
+![CreateCCACreatedApp](images/12_App_A_Blue.png)
+
 
 
 
