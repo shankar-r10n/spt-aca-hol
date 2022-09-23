@@ -44,6 +44,15 @@ Alice and Bob - proceed on the quest set forth by Martha.
 2. Utiize multiple revisions and test Traffic Split functionality with 2 different versions of the same app.
 3. Learn the Azure Container App specific terminologies and tenets as part of the environment creation excecise.
 
+1.a. Create a Container App environment & test a simple app
+
+In the Azure Portal, click on [Create a Resource] and type in "Container App"
+
+
+
+
+
+
 
 
 
@@ -66,7 +75,7 @@ Alice and Bob - proceed on the quest set forth by Martha.
 *To be done*
 
 
-### Lab 4 – KEDA in action with Scale to zero
+### Lab 4 – KEDA in action with Scale to Zero
 
 *Introduce KEDA, hands-on sample with AKS (if needed) , then contrast with ACA ease of use and incorporate HTTP handler based scaling down to zero.*
 *To be done*
