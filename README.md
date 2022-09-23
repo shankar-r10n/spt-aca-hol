@@ -73,6 +73,7 @@ Choose the [Region] you want to deploy to from the drop-down of available region
 As it is the first time, click on the [Create new] hyperlink to create a new [Container Apps Environment]
 
 <<Insert image of Create Container Apps Environment - Basics>> tab
+  
 **[Create Container Apps Environment - Basics] tab**
 
 Environment details
