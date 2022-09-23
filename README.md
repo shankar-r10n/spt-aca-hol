@@ -47,7 +47,9 @@ As part of the environment creation & deployment  get familiar with the UI and l
 1.a. Create a Container App environment & test a simple app
 
 In the Azure Portal, click on [+ Create a Resource] and type in "Container App"
+
 <<Insert Image 1>>
+
 <<Insert Image 2>>
 
 
@@ -92,7 +94,8 @@ Virtual Network
 For Lab 1 - we are not going to choose a own virtual network (VNet). So choose [No]
 
 But for future reference, choose [Yes]  just to make a note of this part for when you create an container app environment beyond this lab - that you get to choose an existing VNet or [Create new].
-And then provide the [Infrastructure subnet] range.
+  
+And then observe the menu to provide the [Infrastructure subnet] range.
 
 The choice to have the Virtual IP as [Internal] only with the endpoint being an internal load balancer [OR] to expose the apps on an internet accessible IP address is also made here.
 
