@@ -40,14 +40,65 @@ Alice and Bob - proceed on the quest set forth by Martha.
 ### Lab 1 – Create an Azure Container Apps service using the Azure Portal.
 
 **Objectives:**
-1. Create the environment & test a simple container app using the Azure Portal.
-2. Utiize multiple revisions and test Traffic Split functionality with 2 different versions of the same app.
-3. Learn the Azure Container App specific terminologies and tenets as part of the environment creation excecise.
+a. Create the environment & test a simple container app using the Azure Portal.
+b. Utiize multiple revisions and test Traffic Split functionality with 2 different versions of the same app.
+As part of the environment creation & deployment  get familiar with the UI and learn the Azure Container App specific terminologies & features.
 
 1.a. Create a Container App environment & test a simple app
 
-In the Azure Portal, click on [Create a Resource] and type in "Container App"
+In the Azure Portal, click on [+ Create a Resource] and type in "Container App"
+<<Insert Image 1>>
+<<Insert Image 2>>
 
+
+
+
+[Create Container App - Basics] tab
+<< Insert pre-filled Basics tab image>>
+
+
+Project Details
+
+Choose the [Subscription] you would like to use.
+It is recommended that you create a new resource group so fill in a name & create a new resource group by clicking on the [Create New] hyperlink.
+Provide a [Container app name] of your choice _e.g. aca-hol-demo_
+
+
+Container Apps Environment
+
+Choose the [Region] you want to deploy to from the drop-doen of available regions.
+
+As it is the first time, click on the [Create new] hyperlink to create a new [Container Apps Environment]
+
+<<Insert image of Create Container Apps Environment - Basics>> tab
+[Create Container Apps Environment - Basics] tab
+Environment details
+
+Provide an [Environment name] 
+
+Zone Redundancy (ZR) - The decision to make this Container App Environment - zone redundant is to be made at deployment time. The Container App Environment cannot be made zone redundant If NOT deployed as zone redundant at the time of creation.
+For Lab 1 - let us leave [Zone redundancy] as [Disabled]
+
+
+[Create Container Apps Environment - Monitoring] tab
+
+A [Log Analytics workspace] name is pre-populated for you. You can choose to [Create new] using the link.
+<<Insert image of Create Container Apps Environment - MOnitoring tab>>
+
+[Create Container Apps Environment - Networking] tab
+
+Virtual Network
+
+For Lab 1 - we are not going to choose a own virtual network (VNet). So choose [No]
+
+But for future reference, choose [Yes]  just to make a note of this part for when you create an container app environment beyond this lab - that you get to choose an existing VNet or [Create new].
+And then provide the [Infrastructure subnet] range.
+
+The choice to have the Virtual IP as [Internal] only with the endpoint being an internal load balancer [OR] to expose the apps on an internet accessible IP address is also made here.
+
+Now, revert to choosing [No] and click [Create]
+
+<<Insert image of Create Container Apps Environment - Networking tab>>
 
 
 
