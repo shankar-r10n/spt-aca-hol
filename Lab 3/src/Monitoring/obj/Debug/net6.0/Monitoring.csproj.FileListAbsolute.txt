@@ -1,0 +1,12 @@
+C:\Users\shramac\OneDrive - Microsoft\Documents\GitHub\dotNET-FrontEnd-to-BackEnd-on-Azure-Container-Apps\src\Monitoring\bin\Debug\net6.0\Monitoring.deps.json
+C:\Users\shramac\OneDrive - Microsoft\Documents\GitHub\dotNET-FrontEnd-to-BackEnd-on-Azure-Container-Apps\src\Monitoring\bin\Debug\net6.0\Monitoring.dll
+C:\Users\shramac\OneDrive - Microsoft\Documents\GitHub\dotNET-FrontEnd-to-BackEnd-on-Azure-Container-Apps\src\Monitoring\bin\Debug\net6.0\Monitoring.pdb
+C:\Users\shramac\OneDrive - Microsoft\Documents\GitHub\dotNET-FrontEnd-to-BackEnd-on-Azure-Container-Apps\src\Monitoring\obj\Debug\net6.0\Monitoring.csproj.AssemblyReference.cache
+C:\Users\shramac\OneDrive - Microsoft\Documents\GitHub\dotNET-FrontEnd-to-BackEnd-on-Azure-Container-Apps\src\Monitoring\obj\Debug\net6.0\Monitoring.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shramac\OneDrive - Microsoft\Documents\GitHub\dotNET-FrontEnd-to-BackEnd-on-Azure-Container-Apps\src\Monitoring\obj\Debug\net6.0\Monitoring.AssemblyInfoInputs.cache
+C:\Users\shramac\OneDrive - Microsoft\Documents\GitHub\dotNET-FrontEnd-to-BackEnd-on-Azure-Container-Apps\src\Monitoring\obj\Debug\net6.0\Monitoring.AssemblyInfo.cs
+C:\Users\shramac\OneDrive - Microsoft\Documents\GitHub\dotNET-FrontEnd-to-BackEnd-on-Azure-Container-Apps\src\Monitoring\obj\Debug\net6.0\Monitoring.csproj.CoreCompileInputs.cache
+C:\Users\shramac\OneDrive - Microsoft\Documents\GitHub\dotNET-FrontEnd-to-BackEnd-on-Azure-Container-Apps\src\Monitoring\obj\Debug\net6.0\Monitoring.dll
+C:\Users\shramac\OneDrive - Microsoft\Documents\GitHub\dotNET-FrontEnd-to-BackEnd-on-Azure-Container-Apps\src\Monitoring\obj\Debug\net6.0\refint\Monitoring.dll
+C:\Users\shramac\OneDrive - Microsoft\Documents\GitHub\dotNET-FrontEnd-to-BackEnd-on-Azure-Container-Apps\src\Monitoring\obj\Debug\net6.0\Monitoring.pdb
+C:\Users\shramac\OneDrive - Microsoft\Documents\GitHub\dotNET-FrontEnd-to-BackEnd-on-Azure-Container-Apps\src\Monitoring\obj\Debug\net6.0\ref\Monitoring.dll
