@@ -73,6 +73,8 @@ As part of the Azure Container App environment creation and deployment,  get fam
 
 ### Lab 2 – Create an Azure Container App - with az cli commands
 **Objectives**  
+1. Get faimiliar with the _az cli_ and the _az containerapp_ commands to create the Container App in Lab 1 in a command line driven manner.
+2. Optionally, work through and complete the listed challenge(s).
 
 **Steps**  
 
@@ -137,6 +139,7 @@ az containerapp env create \
 
 **Objectives**  
 1. Create 3 Azure Container Apps - 2 back-end APIs and 1 UI front end - and inegrate them to demonstrate cross Container App integration.
+2. Optionally, work through and complete the listed challenge(s).
 
 **Steps**  
 1. Create a Container App - for the _inventoryapi_ microservice.   
@@ -186,6 +189,7 @@ az containerapp create \
 
 **Objectives**  
 1. Configure _inventoryapi_ for KEDA scaling with - httptrigger -  for  HTTP handler based scaling down to zero.
+2. Optionally, work through and complete the listed challenge(s).
 
 
 **Steps**  
@@ -203,6 +207,7 @@ az containerapp create \
 
 **Objectives**  
 1. Visualize the metrics of the deployed Azure Container Apps using Azure Managed Grafana.
+2. Optionally, work through and complete the listed challenge(s).
 
 **Steps**  
 1. Deploy an Azure Managed Grafana instance.
