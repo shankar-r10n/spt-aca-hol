@@ -72,6 +72,9 @@ As part of the Azure Container App environment creation and deployment,  get fam
  ***
 
 ### Lab 2 – Create an Azure Container App - with az cli commands
+**Objectives**  
+
+**Steps**  
 
 ```
 
@@ -122,12 +125,31 @@ az containerapp env create \
 # Navigate to the FQDN returned
 
 ```
-### Lab 3 – Deploy and test 2 Container Apps with one calling the other ... 
 
-We use the same ACA Environment and environment variables created earlier in [Lab 2] to deploy 2 additonal Container Apps.  
 
-One  is a DotNet app. and the other is a NodeJS app - with the NodeJS app being exposed for public access. The Dotnet app has internal ingress only.
-The FQDN of the DotNet app is set as an Environment Variable - which is subsequently passed to and utilized by the NodeJS app.
+**Challenges (optional)**
+1. Convert the above deployment internal ingress using - _az cli_ .
+2. Secure the above deployment with a VNet.
+
+
+
+### Lab 3 – Create 3 different Container Apps and demonstrate cross microservice communication
+
+**Objectives**  
+1. 
+
+**Steps**  
+1. Create a Container App - for the _inventoryapi_ microservice.   
+2. Test the _inventory_ microservice. 
+3. Create a Container App - for the _productapi_ microservice.   
+4. Test the _productapi_ microservice. 
+5. Create a Container App - for the _store_ UI frontend. 
+6. 
+
+**Challenges (optional)**
+1. Determine – if there are other ways to achieve the same objective - _cross microservice communication_ ? (Hint: Dapr)
+2. Explore and implement the same cross-microservice integration scenario with the 3 Container Apps above with Dapr.
+
 
 
 ```
@@ -161,21 +183,30 @@ az containerapp create \
 
 ### Lab 4 – KEDA in action with Scale to Zero
 
-*Introduce KEDA, hands-on sample with AKS (if needed) , then contrast with ACA ease of use and incorporate HTTP handler based scaling down to zero.*
-*To be done*
+**Objectives**  
+1. Configure _inventoryapi_ for KEDA scaling with - httptrigger -  for  HTTP handler based scaling down to zero.
+2. Observe that replicas are at zero
+3. Generate/simulate concurrent user and http requests load using a load testing mechanism of your choice to the _inventoryapi_ ingress URI.
+4. Observe that replicas are scaling up as the load test progresses.
+
+**Steps**  
+
+**Challenges (optional)**
+1. Explore other scalers in KEDA and create a custom scaler implementation of your choice based on KEDA scaled object chosen. 
+   _You might need to deploy additional Azure resource based on choices made._
 
 ### Lab 5 – Monitoring an ACA app
 
-*Monitoring fundamentals driven by the Log Analytics workspace. Visualize the monitoring with an Azure native option*
+**Objectives**  
+1. Deploy an Azure Managed Grafana instance.
+2. Configure and Import a Azure Container App workbook.
+3. Observe the Grafana dashboard for the metrics visualiztion.
 
-*To be done*
 
+**Steps**  
 
-### Lab 6 – ACA versioning using [Revisions]
-
-*Exercise introducing multiple iterative changes including app scope changes and enabling audience to learn how Revisions in ACA help with versioning.*
-
-*To be done*
+**Challenges (optional)**
+1. Explore other ways to visualize metrics and implement an Azure native one without using Grafana.
 
 
 
