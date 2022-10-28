@@ -58,8 +58,10 @@ As part of the Azure Container App environment creation and deployment,  get fam
 
    <img width="510" alt="image" src="https://user-images.githubusercontent.com/25875242/198610282-24091690-01a4-4920-898b-d8dfcd3d7b32.png">
 
+3. Create a new revision 
+   <img width="898" alt="image" src="https://user-images.githubusercontent.com/25875242/198646595-03e04c5c-2c35-410d-8bc4-bfbe8f3ed72b.png">
 
-3. Create traffic split.
+5. Create traffic split.
 
 4. Test traffic split.
 
@@ -116,15 +118,13 @@ az containerapp env create \
  # Create the Container App
  
  az containerapp create \
-  --image "docker.io/dockerr10n/aca-hol-image:A" \
+  --image "docker.io/dockerr10n/aca-lab1-image:green" \
   --name my-container-app \
   --resource-group $RESOURCE_GROUP \
   --environment $CONTAINERAPPS_ENVIRONMENT
   --target-port 80 \
-  --ingress 'external' \
   --query configuration.ingress.fqdn
 
-# Navigate to the FQDN returned
 
 ```
 
