@@ -37,151 +37,44 @@ Alice and Bob - proceed on the quest set forth by Martha.
 ## The Labs
 
 
-### Lab 1 – Create an Azure Container Apps service using the Azure Portal.
+### Lab 1 – Create an Azure Container App using the Azure Portal and implement traffic-split functionality
 
-**Objectives:**
+**Objectives**
 
-a. Create the environment and test a simple container app using the Azure Portal.   
-b. Utiize multiple revisions and test Traffic Split functionality with 2 different versions of the same app.  
-As part of the environment creation and deployment  get familiar with the UI and learn the Azure Container App specific terminologies & features.  
+1. Create the environment and test a sample container app using the Azure Portal.   
+2. Utiize multiple revisions and test Traffic Split functionality with 2 different versions of the same app.  
+As part of the Azure Container App environment creation and deployment,  get familiar with the Azure Portal UI and learn the Azure Container App specific terminologies & features.
+3. Optionally, work through and complete the listed challenges.
   ***
-**1.a. Create a Container App environment and test a simple app**
 
-In the Azure Portal, click on [+ Create a Resource] and type in "Container App"
+**Steps**
+1. Follow instructions in the [Lab 1 - Create Azure Container App - Azure Portal.pdf] in the [Lab 1] folder and create the sample app.  
+   Please note that the container image for this sample app is pulled from a public Docker repository.  
+   If you choose to utilize your own container image repository, utilize the [src] folder and associated Dockerfile to build and push the image to your repository 
+   and substitute the values in the Container App creation step for the [Registry login server] and [Image and tag] values.
 
+2. Utilize multiple revisions - Select the - _Revision Management_ - link in the navigation menu as shown below and then select -
+    _Multiple: Several revisions active  simultaneously_  and _Apply_
 
-![Create Resource](images/1_CreateResource.png)
-
-![CreateACA](images/2_CreateACA.png)
-
- ***
-
-
-[Create Container App - Basics] tab  
-
-![CreateCCABasics](images/3_CCA_Basics.png)
+   <img width="510" alt="image" src="https://user-images.githubusercontent.com/25875242/198610282-24091690-01a4-4920-898b-d8dfcd3d7b32.png">
 
 
-Project Details
+3. Create traffic split.
 
-Choose the [Subscription] you would like to use.
-It is recommended that you create a new resource group so fill in a name and create a new resource group by clicking on the [Create New] hyperlink.
-Provide a [Container app name] of your choice _e.g. aca-hol-demo_
-
-
-Container Apps Environment
-
-Choose the [Region] you want to deploy to from the drop-down of available regions.
-
-**As it is the first time, click on the [Create new] hyperlink to create a new [Container Apps Environment]**
-
-
-**Note:** _An environment in Azure Container Apps creates a secure boundary around a group of container apps. Container Apps deployed to the same environment are deployed in the same virtual network and write logs to the same Log Analytics workspace._
-
- ***
- 
-![CreateEnvBasics](images/4_CCA_Env_Basics.png)
-  
-**[Create Container Apps Environment - Basics] tab**
-
-Environment details
-
-Provide an [Environment name] 
-
-Zone Redundancy (ZR) - The decision to make this Container App Environment - zone redundant is to be made at deployment time. The Container App Environment cannot be made zone redundant If NOT deployed as zone redundant at the time of creation.
-For Lab 1 - let us leave [Zone redundancy] as [Disabled]
-
- ***
-[Create Container Apps Environment - Monitoring] tab
-
-A [Log Analytics workspace] name is pre-populated for you. You can choose to [Create new] using the link.
-
-
-![CreateCCAEnvMonitoring](images/5_CCA_Env_Monitoring.png)
- ***
- 
-**[Create Container Apps Environment - Networking] tab**
-
-Virtual Network
-
-For Lab 1 - we are not going to choose a own virtual network (VNet). So choose [No]
-
-But for future reference, choose [Yes]  just to make a note of this part for when you create an container app environment beyond this lab - that you get to choose an existing VNet or [Create new].
-  
-And then observe the menu to provide the [Infrastructure subnet] range.
-
-The choice to have the Virtual IP as [Internal] only with the endpoint being an internal load balancer [OR] to expose the apps on an internet accessible IP address is also made here.
-
-Now, revert to choosing [No] and click [Create]
-
-![CreateCCAEnvNetworking](images/6_CCA_Env_Networking.png)
-
- ***
- 
- 
-  **[Create Container Apps Environment - App Settings] tab**
-
-![CreateCCAAppsettings](images/7_CCA_AppSettings.png)
-![CreateCCAAppsettings](images/8_CCA_AppSettings.png)
-
-Uncheck the [Use quickstart image] check-box as we want to deploy our own simple app; the container image of our app is in the public Docker Hub.
-
-[Container details]
-  
-[Name] Provide a name for the container
-[Image Source] Select [Docker Hub or other registries]
-[Image type]   Select [Public]
-  
- [Registry login server] can be retained as [docker.io]
- 
- [Image and tag] Enter the value [ dockerr10n/aca-hol-image:A ] 
-  
- [Container resource allocation] - FOr this lab retain the default first value but observe that there is a set of choices that can be made based on your container's  CPU and memory requirements.
-
-Application ingress settings
-
-[HTTP Ingress]    - Check/ enable the checkbox
-
-[Ingress traffic] - Select the [Accepting traffic from anywhere] button.
-
-[Target port]      - Enter 80
- ***
- 
- 
-
- **Click through [Next: Tags] and then go to [Next: Review + create >] and click on [Create]**
-
-![CreateCCACreate](images/9_CCA_Create.png)
- ***
- 
- 
-**In your resource group observe that the following resources are created** 
-
-![CreateCCACreateResources](images/10_CreatedResources_in_RG.png)
- ***
- 
- 
-CLick on the [Container App] resource and observe the Application URI and click on it   
-
-![CreateCCAAppURI](images/11_ContainerApp_AppURI.png)
- ***
- 
-
-
-**After you click the Application URI - you should see the following displayed in your browser**  
-
-![CreateCCACreatedApp](images/12_App_A_Blue.png)
+4. Test traffic split.
 
  ***
 
+**Challenges (optional)**
+1. Implement a 30/30/40 split for same app.
+2. Inactivate one of the versions and re-implement 50/50 split.
 
+ ***
 
+### Lab 2 – Create an Azure Container App - with az cli commands
+**Objectives**  
 
-
-
-
-
-### Lab 2 – Create an ACA service – scripted mode
+**Steps**  
 
 ```
 
@@ -232,12 +125,31 @@ az containerapp env create \
 # Navigate to the FQDN returned
 
 ```
-### Lab 3 – Deploy and test 2 Container Apps with one calling the other ... 
 
-We use the same ACA Environment and environment variables created earlier in [Lab 2] to deploy 2 additonal Container Apps.  
 
-One  is a DotNet app. and the other is a NodeJS app - with the NodeJS app being exposed for public access. The Dotnet app has internal ingress only.
-The FQDN of the DotNet app is set as an Environment Variable - which is subsequently passed to and utilized by the NodeJS app.
+**Challenges (optional)**
+1. Convert the above deployment internal ingress using - _az cli_ .
+2. Secure the above deployment with a VNet.
+
+
+
+### Lab 3 – Create 3 different Container Apps and demonstrate cross microservice communication
+
+**Objectives**  
+1. 
+
+**Steps**  
+1. Create a Container App - for the _inventoryapi_ microservice.   
+2. Test the _inventory_ microservice. 
+3. Create a Container App - for the _productapi_ microservice.   
+4. Test the _productapi_ microservice. 
+5. Create a Container App - for the _store_ UI frontend. 
+6. 
+
+**Challenges (optional)**
+1. Determine – if there are other ways to achieve the same objective - _cross microservice communication_ ? (Hint: Dapr)
+2. Explore and implement the same cross-microservice integration scenario with the 3 Container Apps above with Dapr.
+
 
 
 ```
@@ -271,21 +183,30 @@ az containerapp create \
 
 ### Lab 4 – KEDA in action with Scale to Zero
 
-*Introduce KEDA, hands-on sample with AKS (if needed) , then contrast with ACA ease of use and incorporate HTTP handler based scaling down to zero.*
-*To be done*
+**Objectives**  
+1. Configure _inventoryapi_ for KEDA scaling with - httptrigger -  for  HTTP handler based scaling down to zero.
+2. Observe that replicas are at zero
+3. Generate/simulate concurrent user and http requests load using a load testing mechanism of your choice to the _inventoryapi_ ingress URI.
+4. Observe that replicas are scaling up as the load test progresses.
+
+**Steps**  
+
+**Challenges (optional)**
+1. Explore other scalers in KEDA and create a custom scaler implementation of your choice based on KEDA scaled object chosen. 
+   _You might need to deploy additional Azure resource based on choices made._
 
 ### Lab 5 – Monitoring an ACA app
 
-*Monitoring fundamentals driven by the Log Analytics workspace. Visualize the monitoring with an Azure native option*
+**Objectives**  
+1. Deploy an Azure Managed Grafana instance.
+2. Configure and Import a Azure Container App workbook.
+3. Observe the Grafana dashboard for the metrics visualiztion.
 
-*To be done*
 
+**Steps**  
 
-### Lab 6 – ACA versioning using [Revisions]
-
-*Exercise introducing multiple iterative changes including app scope changes and enabling audience to learn how Revisions in ACA help with versioning.*
-
-*To be done*
+**Challenges (optional)**
+1. Explore other ways to visualize metrics and implement an Azure native one without using Grafana.
 
 
 
