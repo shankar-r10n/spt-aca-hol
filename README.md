@@ -37,7 +37,7 @@ Alice and Bob - proceed on the quest set forth by Martha.
 ## The Labs
 
 
-### Lab 1 – Create an Azure Container Apps service using the Azure Portal.
+### Lab 1 – Create an Azure Container App using the Azure Portal and implement traffic-split functionality
 
 **Objectives**
 
@@ -48,13 +48,16 @@ As part of the Azure Container App environment creation and deployment,  get fam
   ***
 
 **Steps**
-1. Follow instructions in the [Lab 1 - Create Azure Container App - Azure Portal.pdf] in the [Lab 1] folder and create the sample app. 
- 
-  *Please note that the container image for this sample app is pulled from a public Docker repository.  
+1. Follow instructions in the [Lab 1 - Create Azure Container App - Azure Portal.pdf] in the [Lab 1] folder and create the sample app.  
+   Please note that the container image for this sample app is pulled from a public Docker repository.  
    If you choose to utilize your own container image repository, utilize the [src] folder and associated Dockerfile to build and push the image to your repository 
-   and substitute the values in the Container App creation step for the [Registry login server] and [Image and tag] values.*
+   and substitute the values in the Container App creation step for the [Registry login server] and [Image and tag] values.
 
-2. Utilize multiple revisions.
+2. Utilize multiple revisions - Select the - _Revision Management_ - link in the navigation menu as shown below and then select -
+    _Multiple: Several revisions active  simultaneously_  and _Apply_
+
+   <img width="510" alt="image" src="https://user-images.githubusercontent.com/25875242/198610282-24091690-01a4-4920-898b-d8dfcd3d7b32.png">
+
 
 3. Create traffic split.
 
@@ -68,7 +71,7 @@ As part of the Azure Container App environment creation and deployment,  get fam
 
  ***
 
-### Lab 2 – Create an ACA service – scripted mode
+### Lab 2 – Create an Azure Container App - with az cli commands
 
 ```
 
