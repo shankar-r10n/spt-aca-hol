@@ -133,10 +133,10 @@ az containerapp env create \
 
 
 
-### Lab 3 – Create 3 different Container Apps and demonstrate cross microservice communication
+### Lab 3 –  Cross Container App integration and microservice communication
 
 **Objectives**  
-1. 
+1. Create 3 Azure Container Apps - 2 back-end APIs and 1 UI front end - and inegrate them to demonstrate cross Container App integration.
 
 **Steps**  
 1. Create a Container App - for the _inventoryapi_ microservice.   
@@ -144,7 +144,8 @@ az containerapp env create \
 3. Create a Container App - for the _productapi_ microservice.   
 4. Test the _productapi_ microservice. 
 5. Create a Container App - for the _store_ UI frontend. 
-6. 
+6. Create and configure Environment Variables
+7. Test the integrated UI by navigating to the ingress of the _store_ UI frontend.
 
 **Challenges (optional)**
 1. Determine – if there are other ways to achieve the same objective - _cross microservice communication_ ? (Hint: Dapr)
@@ -185,11 +186,14 @@ az containerapp create \
 
 **Objectives**  
 1. Configure _inventoryapi_ for KEDA scaling with - httptrigger -  for  HTTP handler based scaling down to zero.
+
+
+**Steps**  
+1. Configure _inventoryapi_ for KEDA scaling with - httptrigger.
 2. Observe that replicas are at zero
 3. Generate/simulate concurrent user and http requests load using a load testing mechanism of your choice to the _inventoryapi_ ingress URI.
 4. Observe that replicas are scaling up as the load test progresses.
 
-**Steps**  
 
 **Challenges (optional)**
 1. Explore other scalers in KEDA and create a custom scaler implementation of your choice based on KEDA scaled object chosen. 
@@ -198,12 +202,12 @@ az containerapp create \
 ### Lab 5 – Monitoring an ACA app
 
 **Objectives**  
-1. Deploy an Azure Managed Grafana instance.
-2. Configure and Import a Azure Container App workbook.
-3. Observe the Grafana dashboard for the metrics visualiztion.
-
+1. Visualize the metrics of the deployed Azure Container Apps using Azure Managed Grafana.
 
 **Steps**  
+1. Deploy an Azure Managed Grafana instance.
+2. Configure and Import a Azure Container App workbook.
+3. Observe the Grafana dashboard for the metrics visualization. 
 
 **Challenges (optional)**
 1. Explore other ways to visualize metrics and implement an Azure native one without using Grafana.
