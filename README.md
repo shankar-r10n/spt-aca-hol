@@ -42,23 +42,29 @@ Alice and Bob - proceed on the quest set forth by Martha.
 **Objectives**
 
 1. Create the environment and test a sample container app using the Azure Portal.   
-2. Utiize multiple revisions and test Traffic Split functionality with 2 different versions of the same app.  
+2. Utilize multiple revisions and test Traffic Split functionality with 2 different versions of the same app.  
 As part of the Azure Container App environment creation and deployment,  get familiar with the Azure Portal UI and learn the Azure Container App specific terminologies & features.
 3. Optionally, work through and complete the listed challenges.
   ***
 
 **Steps**
-1. Follow instructions in the [Lab 1 - Create Azure Container App - Azure Portal.pdf] in the [Lab 1] folder and create the sample app.  
-   Please note that the container image for this sample app is pulled from a public Docker repository.  
-   If you choose to utilize your own container image repository, utilize the [src] folder and associated Dockerfile to build and push the image to your repository 
-   and substitute the values in the Container App creation step for the [Registry login server] and [Image and tag] values.
+1. **Create the sample app** - Follow instructions in the [Lab 1 - Create Azure Container App - Azure Portal.pdf] in the [Lab 1] folder.
+   
+   Test and verify that you are able to navigate to the ingress URI created and see the expected browser result.
+  
+   *Please note that the container image for this sample app is pulled from a public Docker repository.   
+   If you choose to utilize your own container image repository, utilize the [Lab1\src] folder and the associated Dockerfile to build and push the image to your          repository and substitute the values in the Container App creation step for the [Registry login server] and [Image and tag] values.*
 
-2. Utilize multiple revisions - Select the - _Revision Management_ - link in the navigation menu as shown below and then select -
-    _Multiple: Several revisions active  simultaneously_  and _Apply_
+2. **Enable multiple revisions** -  One of the fundamental steps for Traffic Split is to enable multiple revisions of the app to exist *simultaneously*.
+
+   Select the - _Revision Management_ - link in the left navigation menu as shown below  
+
+   and then select -  _Multiple: Several revisions active  simultaneously_  and _Apply_
 
    <img width="510" alt="image" src="https://user-images.githubusercontent.com/25875242/198610282-24091690-01a4-4920-898b-d8dfcd3d7b32.png">
 
-3. Create a new revision 
+3. **Create a new revision** 
+
    <img width="898" alt="image" src="https://user-images.githubusercontent.com/25875242/198646595-03e04c5c-2c35-410d-8bc4-bfbe8f3ed72b.png">
 
 5. Create traffic split.
