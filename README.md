@@ -93,7 +93,7 @@ As part of the Azure Container App environment creation and deployment,  get fam
       <img width="1153" alt="image" src="https://user-images.githubusercontent.com/25875242/198936241-bfd83e29-319c-4a1a-bd95-2173a3f60e96.png">
 
      
-5. **Create traffic split**
+4. **Create traffic split**
    a. Now let us create a traffic split of 50 % each to these 2 revisions by editing and entering the values as shown below and then click on **_Save_**
       
       <img width="1153" alt="image" src="https://user-images.githubusercontent.com/25875242/198936732-26b2926b-f65b-4075-bacb-209caf97cebb.png">
@@ -103,28 +103,34 @@ As part of the Azure Container App environment creation and deployment,  get fam
    <img width="1169" alt="image" src="https://user-images.githubusercontent.com/25875242/198937104-c251d724-d553-415e-b9b9-6fc8d01ab7aa.png">
 
 
-4. **Test traffic split.**
+5. **Test traffic split.**
 
-  a. Navigate to the [Overview] link as shown and click on the [Application Url]  
-  
-     <img width="1157" alt="image" src="https://user-images.githubusercontent.com/25875242/198939010-5b8c4374-def4-4026-a67a-8fbe3eb082f5.png">
+     a. Navigate to the [Overview] link as shown and click on the [Application Url]   
 
-  
-   
+     <img width="1157" alt="image" src="https://user-images.githubusercontent.com/25875242/198939711-84b5869c-d045-411a-9caf-850dbbd3c664.png">
+
+
+        
      
     
-  b. You should either see a blue or green back ground - and for every _n_ page refreshes you would see that approximately _n/2_ times the page back ground would be 
-     blue and then green for the other instances - effectively proving that we have created a traffic split for 2 different revisions of the same Container App that 
-     are active simultaneously.   
-     
-     You should see one of the 2 following depictions when you refresh the [Application Url] of the [Container App]
-       
-     
-     <img width="845" alt="image" src="https://user-images.githubusercontent.com/25875242/198937981-78ba997a-19c3-4a7a-8ca2-2a61c25fbe2f.png">
+    b. You should either see a blue or green back ground - and for every _n_ page refreshes you would see that approximately _n/2_ times the page back ground would be 
+       blue and then green for the other instances - effectively proving that we have created a traffic split for 2 different revisions of the same Container App that 
+       are active simultaneously.   
+       You should see one of the 2 following depictions when you refresh the [Application Url] of the [Container App]  
+      
+      <img width="868" alt="image" src="https://user-images.githubusercontent.com/25875242/198939822-a53d60f4-fc37-4cf9-8069-256ce76e38e7.png">   
 
       
-     <img width="802" alt="image" src="https://user-images.githubusercontent.com/25875242/198938071-9b4dc612-42d5-4618-934e-ed0e984c573c.png">
+      **OR** 
+      
+      
+       
+      <img width="868" alt="image" src="https://user-images.githubusercontent.com/25875242/198939912-1c43cecd-3f80-422e-a990-b3d0932e509d.png">
+ 
 
+       
+     
+   
       
  ***
 
