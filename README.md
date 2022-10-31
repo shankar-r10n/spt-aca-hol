@@ -139,14 +139,14 @@ As part of the Azure Container App environment creation and deployment,  get fam
  ***
 
 **Challenges (optional)**
-1. Implement a 30/30/40 split for same app.
-2. Inactivate one of the versions and re-implement 50/50 split.
+1. Implement a 30/30/40 split for same app - so that traffic split amongst the green, blue and pink revisions. (Hint: The dockerr10n/aca-lab1-image:pink results in apage with pink colored background.) 
+2. Inactivate one of the revisions and re-implement 50/50 split so that traffic is split between the green and pink revisions.
 
  ***
 
 ### Lab 2 – Create an Azure Container App - with az cli commands
 **Objectives**  
-1. Get faimiliar with the _az cli_ and the _az containerapp_ commands to create the Container App in Lab 1 in a command line driven manner.
+1. Get familiar with the _az cli_ and the _az containerapp_ commands to create the Container App in Lab 1 in a command line driven manner.
 2. Optionally, work through and complete the listed challenge(s).
 
 **Steps**  
