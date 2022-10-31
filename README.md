@@ -84,10 +84,18 @@ As part of the Azure Container App environment creation and deployment,  get fam
  
     <img width="1144" alt="image" src="https://user-images.githubusercontent.com/25875242/198935239-7297a15c-d092-4c35-b025-021b06436b61.png">
 
-   
-5. Create traffic split.
+   d. Now click **_Create_** as shown below 
+      
+   <img width="676" alt="image" src="https://user-images.githubusercontent.com/25875242/198935953-97198e35-37b0-4eae-be5e-615b50d0d00f.png">
 
-4. Test traffic split.
+   e. You should now see the new revision appear as shown below -  with **_Traffic_** at 0 % and **_Active_** enabled.   
+       
+      <img width="1153" alt="image" src="https://user-images.githubusercontent.com/25875242/198936241-bfd83e29-319c-4a1a-bd95-2173a3f60e96.png">
+
+     
+5. **Create traffic split**
+
+4. **Test traffic split.**
 
  ***
 
