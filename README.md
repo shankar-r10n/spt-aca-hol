@@ -48,8 +48,12 @@ As part of the Azure Container App environment creation and deployment,  get fam
   ***
 
 **Steps**
-1. **Create the sample app** - Follow instructions in the [Lab 1 - Create Azure Container App - Azure Portal.pdf] in the [Lab 1] folder to create the sample app.
-   
+1. **Create the sample app** - Follow instructions in the 
+   [Create the sample app PDF](https://github.com/shankar-r10n/spt-aca-hol/blob/main/Lab1/Lab%201%20-%20Create%20Azure%20Container%20App%20-%20Azure%20Portal.pdf) 
+    to create the sample app. 
+
+   _The  [Lab 1 - Create Azure Container App - Azure Portal.pdf] is inside the [Lab 1] folder in this repo._
+
    Note 1: After completing all the instructions in the PDF mentioned, please return here for the further steps of this lab.  
          The PDF is _only_ for the _Create the sample app_ step.  
   
