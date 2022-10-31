@@ -139,7 +139,9 @@ As part of the Azure Container App environment creation and deployment,  get fam
  ***
 
 **Challenges (optional)**
-1. Implement a 30/30/40 split for same app - so that traffic split amongst the green, blue and pink revisions. (Hint: The dockerr10n/aca-lab1-image:pink results in apage with pink colored background.) 
+1. Implement a 30/30/40 split for same app - so that traffic split amongst the green, blue and pink revisions.    
+   _(Hint: The - dockerr10n/aca-lab1-image:pink - image results in a html page with pink colored background.)_  
+
 2. Inactivate one of the revisions and re-implement 50/50 split so that traffic is split between the green and pink revisions.
 
  ***
