@@ -48,18 +48,19 @@ As part of the Azure Container App environment creation and deployment,  get fam
   ***
 
 **Steps**
-1. **Create the sample app** - Follow instructions in the [Lab 1 - Create Azure Container App - Azure Portal.pdf] in the [Lab 1] folder.
+1. **Create the sample app** - Follow instructions in the [Lab 1 - Create Azure Container App - Azure Portal.pdf] in the [Lab 1] folder to create the sample app.
    
-   Test and verify that you are able to navigate to the ingress URI created and see the expected browser result.
+   Note 1: After completing all the instructions in the PDF mentioned, please return here for the further steps of this lab.  
+         The PDF is _only_ for the _Create the sample app_ step.  
   
-   *Please note that the container image for this sample app is pulled from a public Docker repository.   
-   If you choose to utilize your own container image repository, utilize the [Lab1\src] folder and the associated Dockerfile to build and push the image to your          repository and substitute the values in the Container App creation step for the [Registry login server] and [Image and tag] values.*
+   Note 2: Please note that the container image for this sample app is pulled from a public Docker repository.    
+   If you choose to utilize your own container image repository, utilize the [Lab1\src] folder and the associated Dockerfile to build and push the image to your          repository and substitute the values in the Container App creation step for the [Registry login server] and [Image and tag] values.
 
 2. **Enable multiple revisions** -  One of the fundamental steps for Traffic Split is to enable multiple revisions of the app to exist *simultaneously*.
 
-   Select the - _Revision Management_ - link in the left navigation menu as shown below  
-
-   and then select -  _Multiple: Several revisions active  simultaneously_  and _Apply_
+   a. Go to the Container App resource created in Step 1 by clicking on the resource name in your resource group.  
+   b. Select the - _Revision Management_ - link in the left navigation menu as shown below.  
+   c. Then select -  _Multiple: Several revisions active  simultaneously_  and _Apply_ 
 
    <img width="510" alt="image" src="https://user-images.githubusercontent.com/25875242/198610282-24091690-01a4-4920-898b-d8dfcd3d7b32.png">
 
