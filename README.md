@@ -58,16 +58,33 @@ As part of the Azure Container App environment creation and deployment,  get fam
 
 2. **Enable multiple revisions** -  One of the fundamental steps for Traffic Split is to enable multiple revisions of the app to exist *simultaneously*.
 
-   a. Go to the Container App resource created in Step 1 by clicking on the resource name in your resource group.  
+   a. Go to the Container App resource created in Step 1 by clicking on it's resource name in your resource group.  
    b. Select the - _Revision Management_ - link in the left navigation menu as shown below.  
-   c. Then select -  _Multiple: Several revisions active  simultaneously_  and _Apply_ 
+ 
+   c. Click on the - _Choose revision mode_  - option as depicted in the image below -   
+   <img width="1106" alt="image" src="https://user-images.githubusercontent.com/25875242/198933706-5defd2f9-0c9f-41d0-bbdc-857535bd7576.png">
+   
+   
+   d. Then select -  _Multiple: Several revisions active  simultaneously_  and click  _Apply_ 
+   <img width="1118" alt="image" src="https://user-images.githubusercontent.com/25875242/198933866-a1d6c8ce-5835-4de7-86d2-3c2883d6e24c.png">
 
-   <img width="510" alt="image" src="https://user-images.githubusercontent.com/25875242/198610282-24091690-01a4-4920-898b-d8dfcd3d7b32.png">
+   e. Refresh the page you are on the Azure Portal and navigate back to same Container App resource and the _Revision Management_ link in the left navigation menu, 
+   same as Step 2.b. above.
 
-3. **Create a new revision** 
+3. **Create a new revision**   
+   a. Click on  **_Create new revision_** as shown below   
+ 
+   <img width="1151" alt="image" src="https://user-images.githubusercontent.com/25875242/198934487-fab429a2-9986-40b9-a785-942b44c63dc0.png">
+   
+   b. Click on the **_Name_** as shown below in the **_Container Image_** section    
+ 
+   <img width="700" alt="image" src="https://user-images.githubusercontent.com/25875242/198934754-83e0c84d-9fad-4013-9ad0-d5aff1b9d80e.png">
+    
+   c. In the **_Edit a container_** tab that opens up - Enter the new value for the **_Image and tag_** field as  - dockerr10n/aca-lab1-image:blue - as shown in the         image below and then click **_Save_**   
+ 
+    <img width="1144" alt="image" src="https://user-images.githubusercontent.com/25875242/198935239-7297a15c-d092-4c35-b025-021b06436b61.png">
 
-   <img width="898" alt="image" src="https://user-images.githubusercontent.com/25875242/198646595-03e04c5c-2c35-410d-8bc4-bfbe8f3ed72b.png">
-
+   
 5. Create traffic split.
 
 4. Test traffic split.
