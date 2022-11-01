@@ -251,11 +251,28 @@ And if we navigate to the _Application Url_ - we observe the change with the loa
 
 <img width="896" alt="image" src="https://user-images.githubusercontent.com/25875242/199154714-417d7087-4b28-466e-aceb-ebe6ecb06bb0.png">
 
-**6. Create a traffic split** - of 50-50 each for both these revisions
+**6. Create a traffic split** - of 50-50 each for both these revisions. 
+
+The latest revision is now getting 100 % of the ingress traffic; so let us split the ingress traffic between the latest and the revison name of the first revision we created. 
+```
+az containerapp ingress traffic set -n aca-hol-demo1 -g rg-spt-aca-hol1 --revision-weight latest=50 aca-hol-demo1--d9ggleh=50 
+```
+
+After this command is executed, you get the following output depicting that the traffic split has been configured  
+
+<img width="320" alt="image" src="https://user-images.githubusercontent.com/25875242/199157466-85ace811-55d2-4fe5-8a8c-74c5faeabcd7.png">
+
+
+**7. Test the traffic split** - navigate to the Application Url and refresh the page a few times and you would see 50-50 weighted split between pages with green and blue collored backgrounds. 
+
+
 
 **Challenges (optional)**
-1. Convert the above deployment to an internal only ingress using - _az cli_ .
-2. Secure the above deployment with a VNet.
+1. Using the CLI - Implement a 30/30/40 split for same app - so that traffic split amongst the green, blue and pink revisions.     
+   _(Hint: The - dockerr10n/aca-lab1-image:pink - image results in a html page with pink colored background.)_ 
+2. Using the CLI - Inactivate one of the revisions and re-implement 50/50 split so that traffic is split between the green and pink revisions.
+3. Convert the above deployment to an internal only ingress using - _az cli_ .
+4. Secure the above deployment with a VNet.
 
 ***
 
@@ -275,7 +292,8 @@ And if we navigate to the _Application Url_ - we observe the change with the loa
 6. Create and configure Environment Variables
 7. Test the integrated UI by navigating to the ingress of the _store_ UI frontend.
 
-**Challenges (optional)**
+**Challenges (optional)** 
+
 1. Determine – if there are other ways to achieve the same objective - _cross microservice communication_ ? (Hint: Dapr)
 2. Explore and implement the same cross-microservice integration scenario with the 3 Container Apps above with Dapr.
 
