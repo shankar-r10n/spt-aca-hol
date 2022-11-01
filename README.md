@@ -238,8 +238,20 @@ az containerapp revision set-mode --mode multiple \
 
 Ensure that you get the output - **"Mutliple"** - which means the revision mode was set successfully
 
-**5. Create a new revision**
+**5. Create a new revision** - based on the existing revision and using the image -  _docker.io/dockerr10n/aca-lab1-image:blue_   
 
+```
+az containerapp revision copy -n aca-hol-demo1 -g rg-spt-aca-hol1 --image "docker.io/dockerr10n/aca-lab1-image:blue"
+```
+Now, if you navigate to the  _Revision Management_ link in the left navigation you will observe that 2 revisions exist simultaneously and that the revision we recently created is configure to get 100 % of the traffic.  
+
+<img width="1151" alt="image" src="https://user-images.githubusercontent.com/25875242/199154522-defc2380-b198-43d6-8335-44428ea91279.png">
+
+And if we navigate to the _Application Url_ - we observe the change with the loading of the blue background page.
+
+<img width="896" alt="image" src="https://user-images.githubusercontent.com/25875242/199154714-417d7087-4b28-466e-aceb-ebe6ecb06bb0.png">
+
+**6. Create a traffic split** - of 50-50 each for both these revisions
 
 **Challenges (optional)**
 1. Convert the above deployment to an internal only ingress using - _az cli_ .
