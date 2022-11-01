@@ -151,13 +151,12 @@ As part of the Azure Container App environment creation and deployment,  get fam
 1. Get familiar with the _az cli_ and the _az containerapp_ commands to create the Container App in Lab 1 in a command line driven manner.
 2. Optionally, work through and complete the listed challenge(s).
 
-**Steps**  
-
+**Steps**   
+1. **Add the needed extensions and register the necessary providers** - required for creating an Azure Container App using the CLI.  
 ```
 
-## Deploy with CLI
-
-# Login to the CLI
+# Login to the account if you are using Azure CLI command-line tool that is locally installed 
+# Skip this step if you are using Azure Cloud shell. 
 az login
 
 # Install the ACA extension for the CLI
@@ -169,11 +168,14 @@ az provider register --namespace Microsoft.App
 # Register the Microsoft.OperationalInsights provider for the Azure Monitor Log Analytics workspace if you have not used it before.
 az provider register --namespace Microsoft.OperationalInsights
 
+```
+2. **Create the sample app using CLI** 
+```
 # Set the following environment variables
 
-RESOURCE_GROUP="your-container-app-name"
+RESOURCE_GROUP="rg-spt-aca-hol1" # your new resource group name 
 LOCATION="eastus"
-CONTAINERAPPS_ENVIRONMENT="your-environment"
+CONTAINERAPPS_ENVIRONMENT="aca-hol-env1" # your new Conatiner Apps environment name 
 
 # Create a resource group to organize the services related to your new container app
 
@@ -192,13 +194,11 @@ az containerapp env create \
  
  az containerapp create \
   --image "docker.io/dockerr10n/aca-lab1-image:green" \
-  --name my-container-app \
+  --name aca-hol-demo1 \
   --resource-group $RESOURCE_GROUP \
   --environment $CONTAINERAPPS_ENVIRONMENT
   --target-port 80 \
-  --query configuration.ingress.fqdn
-
-
+  
 ```
 
 
