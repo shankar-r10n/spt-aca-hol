@@ -255,7 +255,9 @@ And if we navigate to the _Application Url_ - we observe the change with the loa
 
 The latest revision is now getting 100 % of the ingress traffic; so let us split the ingress traffic between the latest and the revison name of the first revision we created. 
 ```
-az containerapp ingress traffic set -n aca-hol-demo1 -g rg-spt-aca-hol1 --revision-weight latest=50 aca-hol-demo1--d9ggleh=50 
+az containerapp ingress traffic set -n aca-hol-demo1 \
+                -g rg-spt-aca-hol1 \
+  --revision-weight latest=50 aca-hol-demo1--d9ggleh=50  
 ```
 
 After this command is executed, you get the following output depicting that the traffic split has been configured  
