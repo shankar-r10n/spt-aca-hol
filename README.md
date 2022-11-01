@@ -152,7 +152,7 @@ As part of the Azure Container App environment creation and deployment,  get fam
 2. Optionally, work through and complete the listed challenge(s).
 
 **Steps**   
-1. **Add the needed extensions and register the necessary providers** - required for creating an Azure Container App using the CLI.  
+**1. Add the needed extensions and register the necessary providers** - required for creating an Azure Container App using the CLI.  
 ```
 
 # Login to the account if you are using Azure CLI command-line tool that is locally installed 
@@ -169,7 +169,7 @@ az provider register --namespace Microsoft.App
 az provider register --namespace Microsoft.OperationalInsights
 
 ```
-2. **Create the sample app using CLI** 
+**2. Create the sample app using CLI** 
 ```
 # Set the following environment variables
 
@@ -197,15 +197,44 @@ az containerapp env create \
   --name aca-hol-demo1 \
   --resource-group $RESOURCE_GROUP \
   --environment $CONTAINERAPPS_ENVIRONMENT
-  --target-port 80 \
+  
   
 ```
+After executing the above commands, if you navigate to the resource group you created in the Azure Portal  and click on the newly created Container App you will observe the following as depicted in the image below:
+a. Container App is created  
+b. Application Url has the value - Ingress Disabled.  
+
+<img width="1150" alt="image" src="https://user-images.githubusercontent.com/25875242/199140106-50274c47-d166-4681-b32c-a871d3d1b918.png"> 
+
+This is to demonstrate the Container App can be created without any ingress. And that it can be updated to have the Ingress accepting traffic from anywhere in the internet as we are going to show in the next step.  
+
+**3. Update the Container App to enable ingress**  
+
+``` 
+az containerapp ingress enable -n aca-hol-demo1 -g rg-spt-aca-hol1 \
+    --type external --allow-insecure --target-port 80 --transport auto 
+```
+
+After you execute this command, you will get a Application Url in the resultant output in the CLI; you will  have the Url in the *fqdn* value too.   
+
+<img width="696" alt="image" src="https://user-images.githubusercontent.com/25875242/199143610-f0224da6-cab6-4301-ae44-e423e5a55e70.png">
+ 
+
+Navigate to this Url and you should see the browser result as depicted below   
+  
+<img width="1153" alt="image" src="https://user-images.githubusercontent.com/25875242/199144171-23cc193b-6dff-4892-b08a-562dbf6fddd1.png">
+
+
+
+**NOTE:** We could have created an ingress enabled Container App as part of the previous step itself by passing in  the _--ingress external_ and _target-port 80_ in the earlier command in Step 2. We did it in 2 parts to demonstrate that it can be enabled after the creation of the Container App.  
+
 
 
 **Challenges (optional)**
-1. Convert the above deployment internal ingress using - _az cli_ .
+1. Convert the above deployment to an internal only ingress using - _az cli_ .
 2. Secure the above deployment with a VNet.
 
+***
 
 
 ### Lab 3 –  Cross Container App integration and microservice communication
