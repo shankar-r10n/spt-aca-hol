@@ -228,6 +228,17 @@ Navigate to this Url and you should see the browser result as depicted below
 
 **NOTE:** We could have created an ingress enabled Container App as part of the previous step itself by passing in  the _--ingress external_ and _target-port 80_ in the earlier command in Step 2. We did it in 2 parts to demonstrate that it can be enabled after the creation of the Container App.  
 
+**4. Set the revision to Multiple** - enabling multiple revisions of the Container App to exist simultaneously 
+
+```
+az containerapp revision set-mode --mode multiple \
+                                  --name aca-hol-demo1 \ 
+                                  --resource-group rg-spt-aca-hol1
+```
+
+Ensure that you get the output - **"Mutliple"** - which means the revision mode was set successfully
+
+**5. Create a new revision**
 
 
 **Challenges (optional)**
