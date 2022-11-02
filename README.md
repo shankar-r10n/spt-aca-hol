@@ -286,17 +286,16 @@ After this command is executed, you get the following output depicting that the 
 2. Optionally, work through and complete the listed challenge(s).
 
 **Steps**  
-1. Create a Container App - for the _inventoryapi_ microservice.  
+**1. Create a Container App - for the _inventoryapi_ microservice.**  
 
-Assuming you have completed Lab 2, you can choose to utilize the same _Resource Group_ and _Container App Environment_ you created as part of that lab.  
-
+ 
 ```
- # Set the following environment variables
+# Assuming the  Resource Group and Container App environment are already created as part of Lab 2 
+# if not create them.
+# Set the following environment variables
 
  RESOURCE_GROUP="rg-spt-aca-hol1"  
  CONTAINERAPPS_ENVIRONMENT="aca-hol-env1"  
-  # Assuming the  Resource Group and Container App environment are already created as part of Lab 2
-# if not create them.
 
 # Deploy the Container App for the inventoryapi microservice
 az containerapp create \
@@ -305,12 +304,15 @@ az containerapp create \
   --environment $CONTAINERAPPS_ENVIRONMENT \
   --image 'docker.io/dockerr10n/storeinventoryapi:latest' \
   --target-port 80 \
-  --ingress 'external'
+  --ingress 'external' \
+  --query configuration.ingress.fqdn
   
  ```
-2. Test the _inventory_ microservice.  
+  After the command is executed successfuly, make a note of the App Url that is emitted in output.  
 
-3. Create a Container App - for the _productsapi_ microservice.  
+**2. Test the _inventoryapi_ Container App **  
+
+**3. Create a Container App - for the _productsapi_ microservice**  
  ```   
 # Deploy the Container App for the productsapi microservice
 az containerapp create \
@@ -322,12 +324,50 @@ az containerapp create \
   --ingress 'external'
   
  ```
-4. Test the _productapi_ microservice.  
+  After the command is executed successfuly, make a note of the App Url that is emitted in output.   
 
-5. Create a Container App - for the _store_ UI frontend.  
+**4. Test the _productsapi_  Container App**  
 
-6. Create and configure Environment Variables
-7. Test the integrated UI by navigating to the ingress of the _store_ UI frontend.
+**5. Create a Container App - for the _store_ UI frontend**  
+
+```
+az containerapp create \
+  --name store \
+  --resource-group $RESOURCE_GROUP \
+  --environment $CONTAINERAPPS_ENVIRONMENT \
+  --image 'docker.io/dockerr10n/store:latest' \
+  --target-port 80 \
+  --ingress 'external'  
+  
+ ```
+  After the command is executed successfuly, make a note of the App Url that is emitted in output. 
+
+**6. Create and configure Environment Variables** 
+
+In order for the UI store front Contaniner App - store to utilize the data obatined from the 2 backend API Container Apps - inventoryapi and productsapi -- let us create and configure the needed environment variables utilized by the **store** Container App.  
+
+```
+# Create the value needed for the  - InventoryApi - environment variable
+INVENTORY_FQDN=$(az containerapp show \
+  --resource-group $RESOURCE_GROUP \
+  --name inventoryapi \
+  --query properties.configuration.ingress.fqdn -o tsv)
+
+# Set the - InventoryApi - environment variable
+az containerapp update -n store -g $RESOURCE_GROUP  --set-env-var  "InventoryApi=https://$INVENTORY_FQDN"
+
+# Create the value needed for the  - ProductsApi - environment variable
+PRODUCT_FQDN=$(az containerapp show \
+  --resource-group $RESOURCE_GROUP \
+  --name productsapi \
+  --query properties.configuration.ingress.fqdn -o tsv)
+
+# Set the - ProductsApi - environment variable
+az containerapp update -n store -g $RESOURCE_GROUP  --set-env-var  "ProductsApi=https://$PRODUCT_FQDN"
+
+```
+
+**7. Test the integrated UI by navigating to the ingress of the _store_ UI frontend**
 
 **Challenges (optional)** 
 
