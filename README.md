@@ -367,7 +367,12 @@ az containerapp update -n store -g $RESOURCE_GROUP  --set-env-var  "ProductsApi=
 
 ```
 
-**7. Test the integrated UI by navigating to the ingress of the _store_ UI frontend**
+**7. Test the integrated UI by navigating to the App Url of the _store_ Container App - our UI frontend** 
+
+You should see the following page render with the _Campaign Product_ data being obtained from the _productsapi_ Container App and the _Inventory_ column data being obtained from the _inventoryapi_ Container App. 
+
+<img width="902" alt="image" src="https://user-images.githubusercontent.com/25875242/199593495-e1a5af7c-84f7-4530-aa87-f6a3fc2d5208.png">
+
 
 **Challenges (optional)** 
 
