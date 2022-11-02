@@ -54,7 +54,7 @@ As part of the Azure Container App environment creation and deployment,  get fam
 
    _The  [Lab 1 - Create Azure Container App - Azure Portal.pdf] is inside the [Lab 1] folder in this repo._
 
-   Note 1: Complete all instructions in the PDF and then lease return to this README.md again - for the next steps of this Lab 1.  
+   Note 1: Complete all instructions in the PDF and then return to this README.md again - for the next steps of this Lab 1.  
            The PDF is **_only_** for the _Create the sample app_ step.  
   
    Note 2: Please note that the container image for this sample app is pulled from a public Docker repository.    
