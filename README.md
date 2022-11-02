@@ -286,11 +286,46 @@ After this command is executed, you get the following output depicting that the 
 2. Optionally, work through and complete the listed challenge(s).
 
 **Steps**  
-1. Create a Container App - for the _inventoryapi_ microservice.   
-2. Test the _inventory_ microservice. 
-3. Create a Container App - for the _productapi_ microservice.   
-4. Test the _productapi_ microservice. 
-5. Create a Container App - for the _store_ UI frontend. 
+1. Create a Container App - for the _inventoryapi_ microservice.  
+
+Assuming you have completed Lab 2, you can choose to utilize the same _Resource Group_ and _Container App Environment_ you created as part of that lab.  
+
+```
+ # Set the following environment variables
+
+ RESOURCE_GROUP="rg-spt-aca-hol1"  
+ CONTAINERAPPS_ENVIRONMENT="aca-hol-env1"  
+  # Assuming the  Resource Group and Container App environment are already created as part of Lab 2
+# if not create them.
+
+# Deploy the Container App for the inventoryapi microservice
+az containerapp create \
+  --name inventoryapi \
+  --resource-group $RESOURCE_GROUP \
+  --environment $CONTAINERAPPS_ENVIRONMENT \
+  --image 'docker.io/dockerr10n/storeinventoryapi:latest' \
+  --target-port 80 \
+  --ingress 'external'
+  
+ ```
+2. Test the _inventory_ microservice.  
+
+3. Create a Container App - for the _productsapi_ microservice.  
+ ```   
+# Deploy the Container App for the productsapi microservice
+az containerapp create \
+  --name productsapi \
+  --resource-group $RESOURCE_GROUP \
+  --environment $CONTAINERAPPS_ENVIRONMENT \
+  --image 'docker.io/dockerr10n/storeproductapi:latest' \
+  --target-port 80 \
+  --ingress 'external'
+  
+ ```
+4. Test the _productapi_ microservice.  
+
+5. Create a Container App - for the _store_ UI frontend.  
+
 6. Create and configure Environment Variables
 7. Test the integrated UI by navigating to the ingress of the _store_ UI frontend.
 
