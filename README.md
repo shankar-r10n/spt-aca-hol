@@ -381,34 +381,6 @@ You should see the following page render with the _Campaign Product_ data being 
 
 
 
-```
-# Deploy the container-2-dotnet dotnet-app
-az containerapp create \
-  --name dotnet-app \
-  --resource-group $RESOURCE_GROUP \
-  --environment $CONTAINERAPPS_ENVIRONMENT \
-  --image 'ghcr.io/azure-samples/container-apps-connect-multiple-apps/dotnet:main' \
-  --target-port 80 \
-  --ingress 'internal'
-
-DOTNET_FQDN=$(az containerapp show \
-  --resource-group $RESOURCE_GROUP \
-  --name dotnet-app \
-  --query configuration.ingress.fqdn -o tsv)
-
-# Deploy the container-1-node node-app
-az containerapp create \
-  --name node-app \
-  --resource-group $RESOURCE_GROUP \
-  --environment $CONTAINERAPPS_ENVIRONMENT \
-  --image 'ghcr.io/azure-samples/container-apps-connect-multiple-apps/node:main' \
-  --target-port 3000 \
-  --ingress 'external' \
-  --environment-variables DOTNET_FQDN=$DOTNET_FQDN \
-  --query configuration.ingress.fqdn
-```
-
-
 
 ### Lab 4 – KEDA in action with Scale to Zero
 
@@ -428,7 +400,7 @@ az containerapp create \
 1. Explore other scalers in KEDA and create a custom scaler implementation of your choice based on KEDA scaled object chosen. 
    _You might need to deploy additional Azure resource based on choices made._
 
-### Lab 5 – Monitoring an ACA app
+### Lab 5 – Monitoring an Azure Container App
 
 **Objectives**  
 1. Visualize the metrics of the deployed Azure Container Apps using Azure Managed Grafana.
