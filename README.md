@@ -12,18 +12,17 @@ Azure Container Apps (ACA) is the newest offering from Microsoft providing a ser
 
    *Serverless PaaS powered by CNCF projects to enable developers - sounded like an attractive proposition*
 
-BUT all of this was *still* a surmise ; Martha has looped in and tasked two of her top engineers Alice and Bob to conduct a timeboxed evaluation resulting in key findings based on hands-on evaluation. 
-This time-boxed evaluation methodology has proven to be a strategic advantage to Martha's firm for many years.
+Martha has looped in and tasked two of her top engineers Alice and Bob to conduct a timeboxed, hands-on evaluation, such a time-boxed evaluation methodology has proven to be a strategic advantage to Martha's firm for many years.
 
-Alice is a Kubernetes expert having worked with several of SUM Inc.'s clients on anything ranging from - large DIY Kubernetes clusters - to - vendor managed Kubernetes offerings including the Azure Kubernetes Service (AKS) from Microsoft. She has recently aced the Certified Kubernetes Administrator & Certified Kuberneted Application Developer - exams from the Linux Foundation.
+Alice is a Kubernetes expert having worked with several of SUM Inc.'s clients on anything ranging from - large DIY Kubernetes clusters - to - vendor managed Kubernetes offerings including the Azure Kubernetes Service (AKS) from Microsoft. She has recently passed the Certified Kubernetes Administrator & Certified Kuberneted Application Developer exams from the Linux Foundation.
 
-Bob is a polyglot developer - addressing  the full-stack of cloud native application development. He is familiar with containerization and orchestration but would rather spend his time building high-performant microservices and applying the needed development rigor driven by well-adopted software development patterns.
+Bob is a polyglot developer - addressing the full-stack of cloud native application development. He is familiar with containerization and orchestration but would rather spend his time building high-performant microservices and applying the needed development rigor driven by well-adopted software development patterns.
 
-Alice and Bob - proceed on the quest set forth by Martha.
+Alice and Bob proceed on the quest set forth by Martha.
 
 ## The First Take and next steps
 
-*Alice and Bob - read up on some key documentation, announcements from the Microsoft Product Group and some reference material to utilize as part of the ongoing assessment.*
+*Alice and Bob - read up on the following documentation and announcements from Microsoft Engineering*
 
 
 *To be done*
