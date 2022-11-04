@@ -313,7 +313,7 @@ az containerapp create \
 
   In the Postman Client, enter the URI as depicted below for the HTTP GET call and the expected a result of a random number denoting the inventory count of the           productId passed as part of the URI is returned in response.  
 
-  HTTP GET URI : _https://<yourInventoryAPIAppURL>/inventory/<any-alphanumeric-string-representative-of-productId>_  
+  HTTP GET URI : **https://**_< yourInventoryAPIAppURL >_**/inventory/**_< any-alphanumeric-string-representative-of-productId >_
 
 <img width="1159" alt="image" src="https://user-images.githubusercontent.com/25875242/199887734-8fc71b6a-ed5d-4b68-add2-f532f45b5d53.png">
 
@@ -335,7 +335,7 @@ az containerapp create \
 **4. Test the _productsapi_  Container App**  
   In the Postman Client, enter the URI as depicted below for the HTTP GET call and the expected a result of a randomized collection of 10 product names with their       productId.  
 
-  HTTP GET URI : _https://<yourProdcutsAPIAppURL>/product/   
+  HTTP GET URI : **https://**_< yourProductsAPIAppURL >_**/products**     
   
   <img width="1139" alt="image" src="https://user-images.githubusercontent.com/25875242/199889135-b5dc5328-ffd3-4daa-a04c-a2164f634294.png">
 
