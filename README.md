@@ -436,8 +436,9 @@ e. After you click _Create_ a new revision is deployed for the Container App and
 
 
 **Challenges (optional)**
-1. Explore other scalers in KEDA and create a custom scaler implementation of your choice based on KEDA scaled object chosen. 
-   _You might need to deploy additional Azure resource based on choices made._
+1. Utilize the az cli (as containerapp) to achieve the same objectives of Lab 4.
+2. Explore other scalers in KEDA and create a custom scaler implementation of your choice based on KEDA scaled object chosen. 
+   _You might need to deploy additional Azure resource(s) based on choices made._
 
 ### Lab 5 – Monitoring an Azure Container App
 
@@ -448,20 +449,58 @@ e. After you click _Create_ a new revision is deployed for the Container App and
 **Steps**  
 1. Deploy an Azure Managed Grafana instance 
 
-a.   
-<img width="1119" alt="image" src="https://user-images.githubusercontent.com/25875242/199895909-31cce470-abab-4e0a-97a1-d19a786f8887.png">
+   a.   
+   <img width="1119" alt="image" src="https://user-images.githubusercontent.com/25875242/199895909-31cce470-abab-4e0a-97a1-d19a786f8887.png">
 
-b.   
-<img width="692" alt="image" src="https://user-images.githubusercontent.com/25875242/199896009-5d29ec8a-44af-4b50-88a8-e10290a341dd.png">
+   b.   
+   <img width="692" alt="image" src="https://user-images.githubusercontent.com/25875242/199896009-5d29ec8a-44af-4b50-88a8-e10290a341dd.png">
 
-c.   
-<img width="617" alt="image" src="https://user-images.githubusercontent.com/25875242/199896250-0471ca51-b131-4c12-8a15-6d8e5d6b4f6d.png">
+  c.   
+  <img width="617" alt="image" src="https://user-images.githubusercontent.com/25875242/199896250-0471ca51-b131-4c12-8a15-6d8e5d6b4f6d.png">
 
 
 
-2. Configure and Import a Azure Container App workbook  
+2. Configure and Import a Azure Container App workbook 
+   
+   a. Navigate to the _Endpoint_ of the Azure Managed Grafana resource you created in Step 1 of Lab 5. 
+   
+   <img width="1081" alt="image" src="https://user-images.githubusercontent.com/25875242/199998463-8f03ef62-d49d-445e-a2a1-cd4bd3bbbb17.png">
+
+   b. Click on _Import_ as shown below  
+   
+   <img width="674" alt="image" src="https://user-images.githubusercontent.com/25875242/199999434-311e2b2f-c629-4ac1-a367-606c11528ff9.png">
+   
+   c. We intend to import this Grafana Dashboard  - https://grafana.com/grafana/dashboards/16592-azure-container-apps-container-app-view/   
+      So, navigate to the link and _Copy ID to clipboard_   
+
+      <img width="966" alt="image" src="https://user-images.githubusercontent.com/25875242/200000120-c04fec22-32e9-4e4d-80b8-a749200a155d.png">
+
+    d. Copy the Id and _Load_ it as shown below   
+    
+       <img width="776" alt="image" src="https://user-images.githubusercontent.com/25875242/200000472-5d4ae265-7f9b-4394-90fc-71477637452f.png">
+    
+    e. Proceed to _Import_ it after selecting _Azure Monitor_ as the source as shown below   
+       
+       <img width="755" alt="image" src="https://user-images.githubusercontent.com/25875242/200000918-d0df4c0a-4d2e-4a38-a2b3-e282310260ac.png">
+
+
 
 3. Observe the Grafana dashboard for the metrics visualization. 
+
+   a. Observe the dashboard after selecting the appropriate - Subscription, Resource Group and then choose the _inventoryapi_ Container App we created previously. 
+      You will observe the resource  allocations for CPU and Memory. With no recent activity / load testing - the _Max Request Count_ and _Max Replica Count_ should         also show 0.
+      
+      <img width="1157" alt="image" src="https://user-images.githubusercontent.com/25875242/200002233-0f15fd5a-1467-4a90-8885-86be725dbeb9.png">
+
+
+   b. Generate/simulate concurrent user and http requests load using a load testing mechanism of your choice to the _inventoryapi_ App Url   
+
+      <img width="1192" alt="image" src="https://user-images.githubusercontent.com/25875242/199894281-e5a7b5f0-4d71-40bd-989e-e5deb58238a1.png">
+      
+   c. Now observe the dashboard for changes in values. Scroll down the dashboard to the various sections to observe what this pre-built dashboard provides for               visualization.  
+      
+      <img width="1149" alt="image" src="https://user-images.githubusercontent.com/25875242/200003027-9ade1e6e-f28a-43f1-acf2-1ab6d21f3e1d.png">
+
 
 **Challenges (optional)**
 1. Explore other ways to visualize metrics and implement an Azure native one without using Grafana.
