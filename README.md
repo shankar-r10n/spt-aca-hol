@@ -434,8 +434,6 @@ e. After you click _Create_ a new revision is deployed for the Container App and
 4. Observe that replicas are scaling up as the load test progresses  
 <img width="908" alt="image" src="https://user-images.githubusercontent.com/25875242/199895078-4cb35374-19ac-4f49-8a6f-99ddfd23b92d.png">
 
-5. 
-
 
 **Challenges (optional)**
 1. Explore other scalers in KEDA and create a custom scaler implementation of your choice based on KEDA scaled object chosen. 
@@ -448,8 +446,21 @@ e. After you click _Create_ a new revision is deployed for the Container App and
 2. Optionally, work through and complete the listed challenge(s).
 
 **Steps**  
-1. Deploy an Azure Managed Grafana instance.
-2. Configure and Import a Azure Container App workbook.
+1. Deploy an Azure Managed Grafana instance 
+
+a.   
+<img width="1119" alt="image" src="https://user-images.githubusercontent.com/25875242/199895909-31cce470-abab-4e0a-97a1-d19a786f8887.png">
+
+b.   
+<img width="692" alt="image" src="https://user-images.githubusercontent.com/25875242/199896009-5d29ec8a-44af-4b50-88a8-e10290a341dd.png">
+
+c.   
+<img width="617" alt="image" src="https://user-images.githubusercontent.com/25875242/199896250-0471ca51-b131-4c12-8a15-6d8e5d6b4f6d.png">
+
+
+
+2. Configure and Import a Azure Container App workbook  
+
 3. Observe the Grafana dashboard for the metrics visualization. 
 
 **Challenges (optional)**
