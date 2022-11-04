@@ -470,18 +470,20 @@ e. After you click _Create_ a new revision is deployed for the Container App and
    
    <img width="674" alt="image" src="https://user-images.githubusercontent.com/25875242/199999434-311e2b2f-c629-4ac1-a367-606c11528ff9.png">
    
-   c. We intend to import this Grafana Dashboard  - https://grafana.com/grafana/dashboards/16592-azure-container-apps-container-app-view/   
+   c. We intend to import this [Grafana Dashboard](https://grafana.com/grafana/dashboards/16592-azure-container-apps-container-app-view/)  -   
       So, navigate to the link and _Copy ID to clipboard_   
 
-      <img width="966" alt="image" src="https://user-images.githubusercontent.com/25875242/200000120-c04fec22-32e9-4e4d-80b8-a749200a155d.png">
+   
 
-    d. Copy the Id and _Load_ it as shown below   
+    d. Copy the Id and _Load_ it as shown below
+       
+      
     
-       <img width="776" alt="image" src="https://user-images.githubusercontent.com/25875242/200000472-5d4ae265-7f9b-4394-90fc-71477637452f.png">
+      
     
     e. Proceed to _Import_ it after selecting _Azure Monitor_ as the source as shown below   
        
-       <img width="755" alt="image" src="https://user-images.githubusercontent.com/25875242/200000918-d0df4c0a-4d2e-4a38-a2b3-e282310260ac.png">
+      
 
 
 
