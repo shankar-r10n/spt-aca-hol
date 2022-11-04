@@ -402,10 +402,39 @@ You should see the following page render with the _Campaign Product_ data being 
 
 
 **Steps**  
-1. Configure _inventoryapi_ for KEDA scaling with - httptrigger.
-2. Observe that replicas are at zero
-3. Generate/simulate concurrent user and http requests load using a load testing mechanism of your choice to the _inventoryapi_ ingress URI.
-4. Observe that replicas are scaling up as the load test progresses.
+1. Configure _inventoryapi_ for KEDA scaling with - httptrigger   
+a.   
+<img width="907" alt="image" src="https://user-images.githubusercontent.com/25875242/199890528-58f5a68d-08d6-472f-8ea8-4b53ae22cc0b.png">
+
+b.  
+<img width="782" alt="image" src="https://user-images.githubusercontent.com/25875242/199890642-fbbfeb3b-fd81-49a8-a8b2-96dd92152c45.png">
+
+c.  
+<img width="1153" alt="image" src="https://user-images.githubusercontent.com/25875242/199891196-acd2a1f9-28d9-41dd-955a-9d3dac961db6.png">
+
+
+d.  
+<img width="811" alt="image" src="https://user-images.githubusercontent.com/25875242/199891301-403766ff-a538-4e82-8f45-5805068445c0.png">
+
+e. After you click _Create_ a new revision is deployed for the Container App and the scale rule is configured successfully. 
+
+<img width="1152" alt="image" src="https://user-images.githubusercontent.com/25875242/199891577-3fe86640-cad1-42de-a315-5b3005e7dd20.png">
+
+
+
+2. Observe that replicas are at zero  
+
+<img width="929" alt="image" src="https://user-images.githubusercontent.com/25875242/199892941-d8d35706-1ee4-44dd-b0d2-345f226de8b4.png">
+
+3. Generate/simulate concurrent user and http requests load using a load testing mechanism of your choice to the _inventoryapi_ App Url   
+
+<img width="1192" alt="image" src="https://user-images.githubusercontent.com/25875242/199894281-e5a7b5f0-4d71-40bd-989e-e5deb58238a1.png">
+
+
+4. Observe that replicas are scaling up as the load test progresses  
+<img width="908" alt="image" src="https://user-images.githubusercontent.com/25875242/199895078-4cb35374-19ac-4f49-8a6f-99ddfd23b92d.png">
+
+5. 
 
 
 **Challenges (optional)**
