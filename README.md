@@ -309,7 +309,14 @@ az containerapp create \
  ```
   After the command is executed successfuly, make a note of the App Url that is emitted in output.  
 
-**2. Test the _inventoryapi_ Container App **  
+**2. Test the _inventoryapi_ Container App**  
+
+  In the Postman Client, enter the URI as depicted below for the HTTP GET call and the expected a result of a random number denoting the inventory count of the           productId passed as part of the URI is returned in response.  
+
+  HTTP GET URI : _https://<yourInventoryAPIAppURL>/inventory/<any-alphanumeric-string-representative-of-productId>_  
+
+<img width="1159" alt="image" src="https://user-images.githubusercontent.com/25875242/199887734-8fc71b6a-ed5d-4b68-add2-f532f45b5d53.png">
+
 
 **3. Create a Container App - for the _productsapi_ microservice**  
  ```   
@@ -326,6 +333,12 @@ az containerapp create \
   After the command is executed successfuly, make a note of the App Url that is emitted in output.   
 
 **4. Test the _productsapi_  Container App**  
+  In the Postman Client, enter the URI as depicted below for the HTTP GET call and the expected a result of a randomized collection of 10 product names with their       productId.  
+
+  HTTP GET URI : _https://<yourProdcutsAPIAppURL>/product/   
+  
+  <img width="1139" alt="image" src="https://user-images.githubusercontent.com/25875242/199889135-b5dc5328-ffd3-4daa-a04c-a2164f634294.png">
+
 
 **5. Create a Container App - for the _store_ UI frontend**  
 
