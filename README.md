@@ -8,7 +8,7 @@ Azure Container Apps (ACA) is the newest offering from Microsoft providing a ser
 
    *Something that resonated even more - considering startup teams would rather focus on product differentiation, speedy go-to-market as compared to foundational infrastructure setup, security and Day-2 operations.*
 
-2. ACA is built on the foundation of open-source  Cloud Native Computing Foundation (CNCF) projects like - Kubernetes Event Driven Autoscaling (KEDA) and Distributed Application Runime (Dapr) which are gaining adoption amongst cloud nativedevelopers and ACA inherently utilizing the CNCF Graduated prooject - Envoy - for its service-proxy functionality.
+2. ACA is built on the foundation of open-source  Cloud Native Computing Foundation (CNCF) projects like - Kubernetes Event Driven Autoscaling (KEDA) and Distributed Application Runime (Dapr) which are gaining adoption amongst cloud native developers and ACA inherently utilizing the CNCF Graduated project - Envoy - for its service-proxy functionality.
 
    *Serverless PaaS powered by CNCF projects to enable developers - sounded like an attractive proposition*
 
