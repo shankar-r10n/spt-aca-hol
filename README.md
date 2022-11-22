@@ -337,7 +337,7 @@ After this command is executed, you get the following output depicting that the 
 ### Lab 3 –  Cross Container App integration and microservice communication
 
 **Objectives**  
-1. Create 3 Azure Container Apps - 2 back-end APIs and 1 UI front end - and inegrate them to demonstrate cross Container App integration.  
+1. Create 3 Azure Container Apps - 2 back-end APIs and 1 UI front end - and integrate them to demonstrate cross Container App integration.  
 
  <img width="679" alt="image" src="https://user-images.githubusercontent.com/25875242/203225991-b987933a-b0f7-4128-935d-696bc7b13950.png">
 
