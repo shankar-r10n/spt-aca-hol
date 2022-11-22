@@ -46,20 +46,26 @@ Alice and Bob proceed on the quest set forth by Martha.
 
 ***
 
-### Prerequisites  
-
+### Prerequisites   
+1. Access to an Azure subscription with privileges to create Azure resources.   
+   -  _If you do not have an Azure subscription , access to a resource group with privileges to create Azure resources is required. The labs assume you have a subscription; you would need to skip the resource group creation steps in the relevant labs if you already have the resource group._  
+2. [Azure Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/overview) configured and ready to use. Bash commands/instructions provided in relevant labs.  
+    - _Usage of Cloud Shell is favored for users who do not have typical Azure development tools like Azure  CLI installed. Feel free to use your Azure development setup / tooling  if you have one._   
+3. Access to pull container images from a public DockerHub container image registry. 
+   - _If you cannot / do not want to use the lab sepcific container images from public DockerHub, source code is provided in the relevant labs with Dockerfile for you to build and push to container registry of your choice._  
+4. Basic understanding of APIs, Containers and Azure Portal UI/UX.
 ***
 ### Structure  
 
 Each lab has the following structure -  
 
-**Objectives** - listing of the key objectives of the lab.  
+**Objectives** - Listing of the key objectives of the lab.  
 
 **Why is it relevant to the customer ?** - This section describes the relevance and reasoning behind why Alice and Bob chose the objectives for the customer _in this case_ - **Marketblitz**  
 
-**Steps** -   a set of detailed steps to follow in an hands-on manner to achieve the objectives.  
+**Steps** -   A set of detailed steps to follow in an hands-on manner to achieve the objectives.  
 
-**Challenges(optional)** -  While the Objectives and the Steps to achive them are considered mandatory, every lab has a set of optional Challenges that could be completed with some additional effort on the candidate's part. Highly Recommended.  
+**Challenges(optional)** -  While the Objectives and the Steps to achieve them are considered mandatory, every lab has a set of optional Challenges that could be completed with some additional effort on the candidate's part. Highly Recommended.  
 
 
 ***
