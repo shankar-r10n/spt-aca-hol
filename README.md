@@ -20,18 +20,36 @@ Bob is a polyglot developer - addressing the full-stack of cloud native applicat
 
 Alice and Bob proceed on the quest set forth by Martha.
 
-## The First Take and next steps
+## The First Take & the Executive summary
 
-*Alice and Bob - read up on the following documentation and announcements from Microsoft Engineering*
+Apart from looking into the official Azure Container Apps [documentation](https://learn.microsoft.com/en-us/azure/container-apps/) and the  studying the [comparison](https://learn.microsoft.com/en-us/azure/container-apps/compare-options#azure-container-apps) of Azure Containers Apps with other Azure Container options --- Alice and  Bob  --- read the following articles by members of the Azure Container Apps Product Group at Microsoft.   
+
+1. Go Cloud Native with Container Apps [link](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/go-cloud-native-with-azure-container-apps/ba-p/3616407)  
+2. Journey to the cloud with Azure Container Apps [link](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/journey-to-the-cloud-with-azure-container-apps/ba-p/3622609)  
+3. Observability with Azure Container Apps [link](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/observability-with-azure-container-apps/ba-p/3627909)
+
+Having digested the optimal information on Azure Container Apps in a timeboxed manner, both Alice and Bob concur on the prospect this option offer and prepare an executive summary for Martha. The highlight of the summary being a crisp slide as depicted in one of the Microsoft Product Group articles  -  
+
+<img width="746" alt="image" src="https://user-images.githubusercontent.com/25875242/203236769-d9abcbfc-386c-4215-81d6-2f91a345904f.png">
 
 
-*To be done*
 
-## Executive summary
+Based on thereassurance of Alice and Bob's presentation, Martha introduces them to a prospective customer of the firm  - **Marketblitz** 
+This customer, Martha believes could be a ideal pilot customer for ACA and could benefit from a set of hands-on-labs for their development team.  
 
-*Crisp tabulation of Alice and Bob's findings reported back to Martha before getting the approval to proceed on the hands-on-evaluation and labs*
+Alice and Bob are tasked with creating the labs with one overarching instruction from Martha - "Keep it simple but not simplistic :)" 
 
-*To be done*
+## The Customer - Marketblitz  
+
+Markeblitz is a rapidly growing market research firm which has recently **acquired 2 different startups** and their respective product lines. 
+
+One of the acquisition is a  market analytics firm that develops mostly on the **Microsoft web tech stack** – Dotnet Core , ASP.Net Web API et.al. The other acquistion is a marketing UX firm focusing mostly on **different UI libraries.**
+
+Marketblitz – is at a juncture where they want to consolidate ALL their offerings as a single API suite while ensuring their top talent is retained  and continues to work on their respective areas of expertise. They hope to structure some of the existing **core APIs for internal usage only** – parts of which could be used by the **new API suite which would be customer facing.** After the first phase of consolidation, they expect to beta test – at which point they **foresee some challenges with A/B testing** and are also concerned as to how they will meet **scaling needs** if/when the pilot becomes successful with increasing demand from end-users.  
+The Dev team is a mix of developers who are conversant with Azure and the ones who are just getting started on Azure.     
+Apart from core concerns, the lean Ops team at Marketblitz would require **insights and visualization of the performance** of the API suite too without them having to spin up and manage any new instrumentation or dashboards.
+
+
 
 ## The Labs
 
