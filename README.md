@@ -205,9 +205,11 @@ b. Application Url has the value - Ingress Disabled.
 
 <img width="1150" alt="image" src="https://user-images.githubusercontent.com/25875242/199140106-50274c47-d166-4681-b32c-a871d3d1b918.png"> 
 
-This is to demonstrate the Container App can be created without any ingress. And that it can be updated to have the Ingress accepting traffic from anywhere in the internet as we are going to show in the next step.  
+This is to demonstrate the Container App can be created without any ingress. The Container App can later be updated to accept (Ingress) traffic from the Internet.This will be performed during the next step.  
 
 **3. Update the Container App to enable ingress**  
+
+Note: Update the values in the following command to reflect the name of your container app and resource group. 
 
 ``` 
 az containerapp ingress enable -n aca-hol-demo1 -g rg-spt-aca-hol1 \
@@ -219,7 +221,8 @@ After you execute this command, you will get a Application Url in the resultant 
 <img width="696" alt="image" src="https://user-images.githubusercontent.com/25875242/199143610-f0224da6-cab6-4301-ae44-e423e5a55e70.png">
  
 
-Navigate to this Url and you should see the browser result as depicted below   
+Navigate to the above  Url. (Or) 
+You could also - Navigate back to the Application URL field (Within overview) in the portal and click on the now populated URL field and you should see the browser result as depicted below.     
   
 <img width="1153" alt="image" src="https://user-images.githubusercontent.com/25875242/199144171-23cc193b-6dff-4892-b08a-562dbf6fddd1.png">
 
@@ -231,18 +234,18 @@ Navigate to this Url and you should see the browser result as depicted below
 
 ```
 az containerapp revision set-mode --mode multiple \
-                                  --name aca-hol-demo1 \ 
+                                  --name aca-hol-demo1 \
                                   --resource-group rg-spt-aca-hol1
 ```
 
-Ensure that you get the output - **"Mutliple"** - which means the revision mode was set successfully
+Ensure that you get the output - **"Mutliple"** - which means the revision mode was set successfully  
 
 **5. Create a new revision** - based on the existing revision and using the image -  _docker.io/dockerr10n/aca-lab1-image:blue_   
 
 ```
 az containerapp revision copy -n aca-hol-demo1 -g rg-spt-aca-hol1 --image "docker.io/dockerr10n/aca-lab1-image:blue"
 ```
-Now, if you navigate to the  _Revision Management_ link in the left navigation you will observe that 2 revisions exist simultaneously and that the revision we recently created is configure to get 100 % of the traffic.  
+Navigate to the Revision Management configuration page for the Container App within the Azure Portal.  You will see that two revisions exist simultaneously and that the revision we recently created is configured to receive 100 % of the traffic.   
 
 <img width="1151" alt="image" src="https://user-images.githubusercontent.com/25875242/199154522-defc2380-b198-43d6-8335-44428ea91279.png">
 
@@ -264,7 +267,7 @@ After this command is executed, you get the following output depicting that the 
 <img width="320" alt="image" src="https://user-images.githubusercontent.com/25875242/199157466-85ace811-55d2-4fe5-8a8c-74c5faeabcd7.png">
 
 
-**7. Test the traffic split** - navigate to the Application Url and refresh the page a few times and you would see 50-50 weighted split between pages with green and blue collored backgrounds. 
+**7. Test the traffic split** - navigate to the Application Url and refresh the page a few times and you would see 50-50 weighted split between pages with green and blue colored backgrounds. 
 
 
 
