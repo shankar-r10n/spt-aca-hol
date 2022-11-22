@@ -20,7 +20,7 @@ Bob is a polyglot developer - addressing the full-stack of cloud native applicat
 
 Alice and Bob proceed on the quest set forth by Martha.
 
-## The First Take & the Executive summary
+## The First Take
 
 Apart from looking into the official Azure Container Apps [documentation](https://learn.microsoft.com/en-us/azure/container-apps/) and the  studying the [comparison](https://learn.microsoft.com/en-us/azure/container-apps/compare-options#azure-container-apps) of Azure Containers Apps with other Azure Container options --- Alice and  Bob  --- read the following articles by members of the Azure Container Apps Product Group at Microsoft.   
 
@@ -34,8 +34,8 @@ Having digested the optimal information on Azure Container Apps in a timeboxed m
 
 
 
-Based on thereassurance of Alice and Bob's presentation, Martha introduces them to a prospective customer of the firm  - **Marketblitz** 
-This customer, Martha believes could be a ideal pilot customer for ACA and could benefit from a set of hands-on-labs for their development team.  
+Based on the reassurance of Alice and Bob's presentation, Martha introduces them to a prospective customer of the firm  - **Marketblitz** 
+This customer, Martha believes, could be an ideal pilot customer for ACA and could benefit from a set of hands-on-labs for their development team.  
 
 Alice and Bob are tasked with creating the labs with one overarching instruction from Martha - "Keep it simple but not simplistic :)" 
 
