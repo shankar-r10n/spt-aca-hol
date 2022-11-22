@@ -83,7 +83,7 @@ Each lab has the following structure -
 
 **Objectives** - Listing of the key objectives of the lab.  
 
-**Why is it relevant to the customer ?** - This section describes the relevance and reasoning behind why Alice and Bob chose the objectives for the customer _in this case_ - **Marketblitz**  
+**Why is it relevant to the customer ?** - This section describes the relevance and reasoning behind why Alice and Bob chose the objectives for the customer - **Marketblitz**  
 
 **Steps** -   A set of detailed steps to follow in an hands-on manner to achieve the objectives.  
 
@@ -219,7 +219,7 @@ Read more about Container App Environments [here](https://learn.microsoft.com/en
 
 ***
 **Why is it relevant to the customer ?**    
-a. Nudge Marketblitz's developer team further to get familiar with the Azure command line and scripting options.
+a. Nudge Marketblitz's developer team further to get familiar with the Azure command line and scripting options.  
 b. Addresses the customer's need for segementing their API suite - with few APIs for internal only use and others for external use.
 
 ***
