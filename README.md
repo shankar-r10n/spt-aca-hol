@@ -95,6 +95,10 @@ As part of the Azure Container App environment creation and deployment,  get fam
        
       <img width="1153" alt="image" src="https://user-images.githubusercontent.com/25875242/198936241-bfd83e29-319c-4a1a-bd95-2173a3f60e96.png">
 
+**NOTE:** 2 key aspects to note - (a.) you did not have to create another Container App Environment and  (b.) when a _revision-scope_ change was made by making container configuration and image changes a new revision was automatically created for you.
+Read more about Container App Environments [here](https://learn.microsoft.com/en-us/azure/container-apps/environment) and about Revisions [here](https://learn.microsoft.com/en-us/azure/container-apps/revisions)    
+
+
      
 4. **Create traffic split**  
    a. Now let us create a traffic split of 50 % each to these 2 revisions by editing and entering the values as shown below and then click on **_Save_**
@@ -252,6 +256,11 @@ Navigate to the Revision Management configuration page for the Container App wit
 And if we navigate to the _Application Url_ - we observe the change with the loading of the blue background page.
 
 <img width="896" alt="image" src="https://user-images.githubusercontent.com/25875242/199154714-417d7087-4b28-466e-aceb-ebe6ecb06bb0.png">
+
+
+**NOTE:** 2 key aspects to note - (a.) you did not have to create another Container App Environment and  (b.) when a _revision-scope_ change was made by making container configuration and image changes a new revision was automatically created for you.
+Read more about Container App Environments [here](https://learn.microsoft.com/en-us/azure/container-apps/environment) and about Revisions [here](https://learn.microsoft.com/en-us/azure/container-apps/revisions)    
+
 
 **6. Create a traffic split** - of 50-50 each for both these revisions. 
 
