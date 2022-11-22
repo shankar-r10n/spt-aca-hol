@@ -310,7 +310,16 @@ And if we navigate to the _Application Url_ - we observe the change with the loa
 Read more about Container App Environments [here](https://learn.microsoft.com/en-us/azure/container-apps/environment) and about Revisions [here](https://learn.microsoft.com/en-us/azure/container-apps/revisions)    
 
 
-**6. Create a traffic split** - of 50-50 each for both these revisions. 
+**6. Create a traffic split** - of 50-50 each for both these revisions.   
+
+You can list the revisions using the following command ; observe and note down the full revision name of the most 2 revisions that exist.  
+
+```
+
+az containerapp revision list --name aca-hol-demo1 -g rg-spt-aca-hol1
+
+````
+
 
 The latest revision is now getting 100 % of the ingress traffic; so let us split the ingress traffic between the latest and the revison name of the first revision we created. 
 ```
