@@ -54,9 +54,9 @@ Alice and Bob proceed on the quest set forth by Martha.
 3. Access to pull container images from a public DockerHub container image registry. 
    - _If you cannot or do not want to use the lab specific container images from the public DockerHub repo, source code is provided in the relevant labs with it's Dockerfile - for you to build and push to container registry of your choice.Your container registry and image details would need to be substituted accordingly in the relevat steps of the lab._   
 4. Tooling of your choice to test API endpoints. 
-   -  _Postman App is utilized in the relevant labs._   
+   -  _Postman App is utilized here in the relevant labs._   
 5. Tooling of your choice to load test API endpoints.  
-   -  _[Artillery](https://www.artillery.io/) is utilized in the relevant labs._
+   -  _[Artillery](https://www.artillery.io/) is utilized here in the relevant labs._
 5. Basic understanding of APIs, Containers and Azure Portal UI and UX.
 ***
 ### Structure  
