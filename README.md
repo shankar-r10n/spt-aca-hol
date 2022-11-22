@@ -365,7 +365,7 @@ After this command is executed, you get the following output depicting that the 
    _(Hint: The - dockerr10n/aca-lab1-image:pink - image results in a html page with pink colored background.)_ 
 2. Using the CLI - Inactivate one of the revisions and re-implement 50/50 split so that traffic is split between the green and pink revisions.
 3. Convert the above deployment to an internal only ingress using - _az cli_ .
-4. Secure the above deployment with a VNet.
+4. Secure the above deployment with a VNet. (Hint: You may need to create a new Container Apps Environment based on choices you make and then redeploy the app.)
 
 ***
 
