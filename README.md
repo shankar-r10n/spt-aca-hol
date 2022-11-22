@@ -35,7 +35,25 @@ Alice and Bob proceed on the quest set forth by Martha.
 
 ## The Labs
 
+### Table of Contents
+[Prerequisites](#prerequisites)  
+[Structure](#structure)         
+[Lab 1](#lab-1--create-an-azure-container-app-using-the-azure-portal-and-implement-traffic-split-functionality)   
+[Lab 2](#lab-2--create-an-azure-container-app---with-az-cli-commands)  
+[Lab 3](#lab-3---cross-container-app-integration-and-microservice-communication)  
+[Lab 4](#lab-4--keda-in-action-with-scale-to-zero)  
+[Lab 5](#lab-5--monitoring-an-azure-container-app)  
 
+***
+
+### Prerequisites  
+
+***
+### Structure  
+
+***
+
+[<sub><sup>go back to TOC ^</sup></sub>](#table-of-contents)
 ### Lab 1 – Create an Azure Container App using the Azure Portal and implement traffic-split functionality
 
 **Objectives**
@@ -148,7 +166,7 @@ Read more about Container App Environments [here](https://learn.microsoft.com/en
 2. Inactivate one of the revisions and re-implement 50/50 split so that traffic is split between the green and pink revisions.
 
  ***
-
+[<sub><sup>go back to TOC ^</sup></sub>](#table-of-contents)
 ### Lab 2 – Create an Azure Container App - with az cli commands
 **Objectives**  
 1. Get familiar with the _az cli_ and the _az containerapp_ commands to create the Container App in Lab 1 in a command line driven manner.
@@ -289,7 +307,7 @@ After this command is executed, you get the following output depicting that the 
 
 ***
 
-
+[<sub><sup>go back to TOC ^</sup></sub>](#table-of-contents)
 ### Lab 3 –  Cross Container App integration and microservice communication
 
 **Objectives**  
@@ -405,7 +423,7 @@ You should see the following page render with the _Campaign Product_ data being 
 
 
 
-
+[<sub><sup>go back to TOC ^</sup></sub>](#table-of-contents)
 ### Lab 4 – KEDA in action with Scale to Zero
 
 **Objectives**  
@@ -452,6 +470,7 @@ e. After you click _Create_ a new revision is deployed for the Container App and
 2. Explore other scalers in KEDA and create a custom scaler implementation of your choice based on KEDA scaled object chosen. 
    _You might need to deploy additional Azure resource(s) based on choices made._
 
+[<sub><sup>go back to TOC ^</sup></sub>](#table-of-contents)
 ### Lab 5 – Monitoring an Azure Container App
 
 **Objectives**  
