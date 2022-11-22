@@ -105,7 +105,7 @@ Read more about Container App Environments [here](https://learn.microsoft.com/en
       
       <img width="1153" alt="image" src="https://user-images.githubusercontent.com/25875242/198936732-26b2926b-f65b-4075-bacb-209caf97cebb.png">
   
-   b. After the revisions of successfully updated, traffic split is successully created with the percent weigthage we assigned  
+   b. After the revisions of successfully updated, traffic split is successully created with the percent weightage we assigned  
    
    <img width="1169" alt="image" src="https://user-images.githubusercontent.com/25875242/198937104-c251d724-d553-415e-b9b9-6fc8d01ab7aa.png">
 
