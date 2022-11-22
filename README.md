@@ -51,6 +51,17 @@ Alice and Bob proceed on the quest set forth by Martha.
 ***
 ### Structure  
 
+Each lab has the following structure -  
+
+**Objectives** - listing of the key objectives of the lab.  
+
+**Why is it relevant to the customer ?** - This section describes the relevance and reasoning behind why Alice and Bob chose the objectives for the customer _in this case_ - **Marketblitz**  
+
+**Steps** -   a set of detailed steps to follow in an hands-on manner to achieve the objectives.  
+
+**Challenges(optional)** -  While the Objectives and the Steps to achive them are considered mandatory, every lab has a set of optional Challenges that could be completed with some additional effort on the candidate's part. Highly Recommended.  
+
+
 ***
 
 [<sub><sup>go back to TOC ^</sup></sub>](#table-of-contents)
@@ -63,6 +74,9 @@ Alice and Bob proceed on the quest set forth by Martha.
 As part of the Azure Container App environment creation and deployment,  get familiar with the Azure Portal UI and learn the Azure Container App specific terminologies & features.
 3. Optionally, work through and complete the listed challenges.
   ***
+**Why is it relevant to the customer ?**  
+
+***
 
 **Steps**
 1. **Create the sample app** - Download & follow instructions in the 
@@ -170,7 +184,13 @@ Read more about Container App Environments [here](https://learn.microsoft.com/en
 ### Lab 2 – Create an Azure Container App - with az cli commands
 **Objectives**  
 1. Get familiar with the _az cli_ and the _az containerapp_ commands to create the Container App in Lab 1 in a command line driven manner.
-2. Optionally, work through and complete the listed challenge(s).
+2. Optionally, work through and complete the listed challenge(s). 
+
+***
+**Why is it relevant to the customer ?**  
+
+***
+
 
 **Steps**   
 **1. Add the needed extensions and register the necessary providers** - required for creating an Azure Container App using the CLI.  
@@ -313,6 +333,10 @@ After this command is executed, you get the following output depicting that the 
 **Objectives**  
 1. Create 3 Azure Container Apps - 2 back-end APIs and 1 UI front end - and inegrate them to demonstrate cross Container App integration.
 2. Optionally, work through and complete the listed challenge(s).
+***
+**Why is it relevant to the customer ?**  
+
+***
 
 **Steps**  
 **1. Create a Container App - for the _inventoryapi_ microservice.**  
@@ -429,6 +453,10 @@ You should see the following page render with the _Campaign Product_ data being 
 **Objectives**  
 1. Configure _inventoryapi_ for KEDA scaling with - httptrigger -  for  HTTP handler based scaling down to zero.
 2. Optionally, work through and complete the listed challenge(s).
+***
+**Why is it relevant to the customer ?**  
+
+***
 
 
 **Steps**  
@@ -476,6 +504,10 @@ e. After you click _Create_ a new revision is deployed for the Container App and
 **Objectives**  
 1. Visualize the metrics of the deployed Azure Container Apps using Azure Managed Grafana.
 2. Optionally, work through and complete the listed challenge(s).
+***
+**Why is it relevant to the customer ?**  
+
+***
 
 **Steps**  
 1. Deploy an Azure Managed Grafana instance 
