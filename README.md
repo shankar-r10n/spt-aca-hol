@@ -102,7 +102,10 @@ Each lab has the following structure -
 As part of the Azure Container App environment creation and deployment,  get familiar with the Azure Portal UI and learn the Azure Container App specific terminologies & features.
 3. Optionally, work through and complete the listed challenges.
   ***
-**Why is it relevant to the customer ?**  
+**Why is it relevant to the customer ?**   
+
+a. Alice and Bob have crafted this lab to be an easy initiation via the Azure Portal to create Azure resources for the developers in the Marketblitz team just getting started on their Azure journey.  
+b. After the creation of the first app, this lab then addresses one of the key  customer requirements - **A/B Testing** -   and how its foundation could be laid via the multiple revisions and the traffic split functionality that is readily available with ACA.
 
 ***
 
@@ -215,7 +218,9 @@ Read more about Container App Environments [here](https://learn.microsoft.com/en
 2. Optionally, work through and complete the listed challenge(s). 
 
 ***
-**Why is it relevant to the customer ?**  
+**Why is it relevant to the customer ?**    
+a. Nudge Marketblitz's developer team further to get familiar with the Azure command line and scripting options.
+b. Addresses the customer's need for segementing their API suite - with few APIs for internal only use and others for external use.
 
 ***
 
@@ -381,7 +386,9 @@ a. Please note that the container images for the 2 APIs and 1 UI - is pulled fro
 
 b. The source code for the 3 container apps is from this Azure Sample for ACA - https://github.com/Azure-Samples/dotNET-FrontEnd-to-BackEnd-on-Azure-Container-Apps  
 ***
-**Why is it relevant to the customer ?**  
+**Why is it relevant to the customer ?**   
+
+Applies to the customer aspect where different teams own their set of core APIs but do have elements integrated usage - arising from Marketblitz's acquistion of 2 different companies.  
 
 ***
 
@@ -503,6 +510,8 @@ You should see the following page render with the _Campaign Product_ data being 
 ***
 **Why is it relevant to the customer ?**  
 
+Marketblitz customer demand to increase during the beta testing phase and would like to be in a position to adapt to the demand without sunken costs. 
+
 ***
 
 
@@ -552,7 +561,10 @@ e. After you click _Create_ a new revision is deployed for the Container App and
 1. Visualize the metrics of the deployed Azure Container Apps using Azure Managed Grafana.
 2. Optionally, work through and complete the listed challenge(s).
 ***
-**Why is it relevant to the customer ?**  
+**Why is it relevant to the customer ?**   
+
+Marketblitz's lean Ops team requires dashboards and insights into performance / operational metrics of the API suite but without them having to sping up and manage dashboards.  
+
 
 ***
 
