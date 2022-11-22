@@ -52,7 +52,7 @@ Alice and Bob proceed on the quest set forth by Martha.
 2. [Azure Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/overview) configured and ready to use. Bash commands/instructions provided in relevant labs.  
     - _Usage of Cloud Shell is favored for users who do not have typical Azure development tools like Azure  CLI installed. Feel free to use your Azure development setup / tooling  if you have one._   
 3. Access to pull container images from a public DockerHub container image registry. 
-   - _If you cannot / do not want to use the lab sepcific container images from public DockerHub, source code is provided in the relevant labs with Dockerfile for you to build and push to container registry of your choice._  
+   - _If you cannot or do not want to use the lab specific container images from the public DockerHub repo, source code is provided in the relevant labs with it's Dockerfile - for you to build and push to container registry of your choice.Your container registry and image details would need to be substituted accordingly in the relevat steps of the lab._   
 4. Basic understanding of APIs, Containers and Azure Portal UI/UX.
 ***
 ### Structure  
