@@ -53,7 +53,7 @@ Alice and Bob proceed on the quest set forth by Martha.
     - _Usage of Cloud Shell is favored for users who do not have typical Azure development tools like Azure  CLI installed. Feel free to use your Azure development setup / tooling  if you have one._   
 3. Access to pull container images from a public DockerHub container image registry. 
    - _If you cannot or do not want to use the lab specific container images from the public DockerHub repo, source code is provided in the relevant labs with it's Dockerfile - for you to build and push to container registry of your choice.Your container registry and image details would need to be substituted accordingly in the relevat steps of the lab._   
-4. Basic understanding of APIs, Containers and Azure Portal UI/UX.
+4. Basic understanding of APIs, Containers and Azure Portal UI and UX.
 ***
 ### Structure  
 
@@ -95,7 +95,7 @@ As part of the Azure Container App environment creation and deployment,  get fam
            The PDF is **_only_** for the _Create the sample app_ step.  
   
    Note 2: Please note that the container image for this sample app is pulled from a public Docker repository.    
-   If you choose to utilize your own container image repository, utilize the [Lab1\src] folder and the associated Dockerfile to build and push the image to your          repository and substitute the values in the Container App creation step for the [Registry login server] and [Image and tag] values.
+   If you choose to utilize your own container image repository, utilize the [Lab1\src] folder and the associated Dockerfile to build and push the image to your          container registry of choice / repository  and substitute the values in the Container App creation step for the [Registry login server] and [Image and tag] values.
 
 2. **Enable multiple revisions** -  One of the fundamental steps for Traffic Split is to enable multiple revisions of the app to exist *simultaneously*.
 
@@ -338,7 +338,13 @@ After this command is executed, you get the following output depicting that the 
 
 **Objectives**  
 1. Create 3 Azure Container Apps - 2 back-end APIs and 1 UI front end - and inegrate them to demonstrate cross Container App integration.
-2. Optionally, work through and complete the listed challenge(s).
+2. Optionally, work through and complete the listed challenge(s).  
+
+**NOTE:**  -  
+a. Please note that the container images for the 2 APIs and 1 UI - is pulled from a public Docker repository in this lab.    
+   If you choose to utilize your own container image repository, utilize the [Lab3\src] folder and the associated Dockerfiles to build and push the images to your          container registry of choice / repository and substitute the values in the relevant steps.  
+
+b. The source code for the 3 container apps is from this Azure Sample for ACA - https://github.com/Azure-Samples/dotNET-FrontEnd-to-BackEnd-on-Azure-Container-Apps  
 ***
 **Why is it relevant to the customer ?**  
 
