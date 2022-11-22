@@ -48,7 +48,7 @@ Alice and Bob proceed on the quest set forth by Martha.
 
 ### Prerequisites   
 1. Access to an Azure subscription with privileges to create Azure resources.   
-   -  _If you do not have an Azure subscription , access to a resource group with privileges to create Azure resources is required. The labs assume you have a subscription; you would need to skip the resource group creation steps in the relevant labs if you already have the resource group._  
+   -  _If you do not have an entire Azure subscription , access to a Azure resource group with privileges to create Azure resources is required. The labs assume you have a subscription; you would need to skip the resource group creation steps in the relevant labs if you already have the resource group._  
 2. [Azure Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/overview) configured and ready to use. Bash commands/instructions provided in relevant labs.  
     - _Usage of Cloud Shell is favored for users who do not have typical Azure development tools like Azure  CLI installed. Feel free to use your Azure development setup / tooling  if you have one._   
 3. Access to pull container images from a public DockerHub container image registry. 
