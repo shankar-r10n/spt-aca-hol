@@ -134,7 +134,7 @@ b. After the creation of the first app, this lab then addresses one of the key  
    d. Then select -  _Multiple: Several revisions active  simultaneously_  and click  _Apply_ 
    <img width="1118" alt="image" src="https://user-images.githubusercontent.com/25875242/198933866-a1d6c8ce-5835-4de7-86d2-3c2883d6e24c.png">
 
-   e. Refresh the page you are on the Azure Portal and navigate back to same Container App resource and the _Revision Management_ link in the left navigation menu, 
+   e. Refresh the page you are on _within_ the Azure Portal and navigate back to same Container App resource and the _Revision Management_ link in the left navigation menu, 
    same as Step 2.b. above.
 
 3. **Create a new revision**   
@@ -142,7 +142,7 @@ b. After the creation of the first app, this lab then addresses one of the key  
  
    <img width="1151" alt="image" src="https://user-images.githubusercontent.com/25875242/198934487-fab429a2-9986-40b9-a785-942b44c63dc0.png">
    
-   b. Click on the **_Name_** as shown below in the **_Container Image_** section    
+   b. Click on the previously created container image's **_Name_** as shown below in the **_Container Image_** section    
  
    <img width="700" alt="image" src="https://user-images.githubusercontent.com/25875242/198934754-83e0c84d-9fad-4013-9ad0-d5aff1b9d80e.png">
     
