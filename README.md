@@ -112,7 +112,7 @@ b. After the creation of the first app, this lab then addresses one of the key  
 **Steps**
 1. **Create the sample app** - Download & follow instructions in the 
    [Create the sample app PDF](https://github.com/shankar-r10n/spt-aca-hol/blob/main/Lab1/Lab%201%20-%20Create%20Azure%20Container%20App%20-%20Azure%20Portal.pdf) 
-    to create the sample app.  
+    to create the sample app. Preferably, open this PDF in a PDF viewer or a spearate browser window.
 
    _The  [Lab 1 - Create Azure Container App - Azure Portal.pdf] is inside the [Lab 1] folder in this repo._
 
