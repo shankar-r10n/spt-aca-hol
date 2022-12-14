@@ -1,8 +1,3 @@
-# WORK IN-PROGRESS
-
-Please note that this repo is a work in progress. Content is being enhanced , tweaked and removed based on some early feedback. The number of labs and structure are candidates for change too. Given that, the steps and content detailed in the lab at this point have been tested and can be used for your learning ppurposes  
-
-***
 
 # Azure Container Apps Hands-on-Labs
 
