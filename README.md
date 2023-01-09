@@ -9,13 +9,13 @@ Azure Container Apps (ACA) is the newest offering from Microsoft providing a ser
 
    *Something that resonated even more - considering startup teams would rather focus on product differentiation, speedy go-to-market as compared to foundational infrastructure setup, security and Day-2 operations.*
 
-2. ACA is built on the foundation of open-source  Cloud Native Computing Foundation (CNCF) projects like - Kubernetes Event Driven Autoscaling (KEDA) and Distributed Application Runime (Dapr) which are gaining adoption amongst cloud native developers and ACA inherently utilizing the CNCF Graduated project - Envoy - for its service-proxy functionality.
+2. ACA is built on the foundation of open-source  Cloud Native Computing Foundation (CNCF) projects like - Kubernetes Event Driven Autoscaling (KEDA) and Distributed Application Runtime (Dapr) which are gaining adoption amongst cloud native developers and ACA inherently utilizing the CNCF Graduated project - Envoy - for its service-proxy functionality.
 
    *Serverless PaaS powered by CNCF projects to enable developers - sounded like an attractive proposition*
 
 Martha has looped in and tasked two of her top engineers Alice and Bob to conduct a timeboxed hands-on evaluation of ACA. Such a time-boxed evaluation methodology has proven to be a strategic advantage to Martha's firm for many years.
 
-Alice is a Kubernetes expert having worked with several of SUM Inc.'s clients on anything ranging from - large DIY Kubernetes clusters - to - vendor managed Kubernetes offerings including the Azure Kubernetes Service (AKS) from Microsoft. She has recently passed the Certified Kubernetes Administrator & Certified Kuberneted Application Developer exams from the Linux Foundation.
+Alice is a Kubernetes expert having worked with several of SUM Inc.'s clients on anything ranging from - large DIY Kubernetes clusters - to - vendor managed Kubernetes offerings including the Azure Kubernetes Service (AKS) from Microsoft. She has recently passed the Certified Kubernetes Administrator & Certified Kubernetes Application Developer exams from the Linux Foundation.
 
 Bob is a polyglot developer - addressing the full-stack of cloud native application development. He is familiar with containerization and orchestration but would rather spend his time building high-performant microservices and applying the needed development rigor driven by well-adopted software development patterns. He is relatively new to Azure.
 
@@ -44,7 +44,7 @@ Alice and Bob are tasked with creating the labs with one overarching instruction
 
 Markeblitz is a rapidly growing market research firm which has recently **acquired 2 different startups** and their respective product lines. 
 
-One of the acquisition is a  market analytics firm that develops mostly on the **Microsoft web tech stack** – Dotnet Core , ASP.Net Web API et.al. The other acquistion is a marketing UX firm focusing mostly on **different UI libraries.**
+One of the acquisition is a  market analytics firm that develops mostly on the **Microsoft web tech stack** – Dotnet Core , ASP.Net Web API et.al. The other acquisition is a marketing UX firm focusing mostly on **different UI libraries.**
 
 Marketblitz – is at a juncture where they want to consolidate ALL their offerings as a single API suite while ensuring their top talent is retained  and continues to work on their respective areas of expertise. They hope to structure some of the existing **core APIs for internal usage only** – parts of which could be used by the **new API suite which would be customer facing.** After the first phase of consolidation, they expect to beta test – at which point they **foresee some challenges with A/B testing** and are also concerned as to how they will meet **scaling needs** if/when the pilot becomes successful with increasing demand from end-users.  
 The Dev team is a mix of developers who are conversant with Azure and the ones who are just getting started on Azure.     
@@ -71,7 +71,7 @@ Apart from core concerns, the lean Ops team at Marketblitz would require **insig
 2. [Azure Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/overview) configured and ready to use. Bash commands/instructions provided in relevant labs.  
     - _Usage of Cloud Shell is favored for users who do not have typical Azure development tools like Azure  CLI installed. Feel free to use your Azure development setup / tooling  if you have one._   
 3. Access to pull container images from a public DockerHub container image registry. 
-   - _If you cannot or do not want to use the lab specific container images from the public DockerHub repo, source code is provided in the relevant labs with it's Dockerfile - for you to build and push to container registry of your choice.Your container registry and image details would need to be substituted accordingly in the relevat steps of the lab._   
+   - _If you cannot or do not want to use the lab specific container images from the public DockerHub repo, source code is provided in the relevant labs with it's Dockerfile - for you to build and push to container registry of your choice.Your container registry and image details would need to be substituted accordingly in the relevant steps of the lab._   
 4. Tooling of your choice to test API endpoints. 
    -  _Postman App is utilized here in the relevant labs._   
 5. Tooling of your choice to load test API endpoints.  
@@ -113,7 +113,7 @@ b. After the creation of the first app, this lab then addresses one of the key  
 **Steps**
 1. **Create the sample app** - Download & follow instructions in the 
    [Create the sample app PDF](https://github.com/shankar-r10n/spt-aca-hol/blob/main/Lab1/Lab%201%20-%20Create%20Azure%20Container%20App%20-%20Azure%20Portal.pdf) 
-    to create the sample app. Preferably, open this PDF in a PDF viewer or a spearate browser window.
+    to create the sample app. Preferably, open this PDF in a PDF viewer or a separate browser window.
 
    _The  [Lab 1 - Create Azure Container App - Azure Portal.pdf] is inside the [Lab 1] folder in this repo._
 
@@ -169,7 +169,7 @@ Read more about Container App Environments [here](https://learn.microsoft.com/en
       
       <img width="1153" alt="image" src="https://user-images.githubusercontent.com/25875242/198936732-26b2926b-f65b-4075-bacb-209caf97cebb.png">
   
-   b. After the revisions of successfully updated, traffic split is successully created with the percent weightage we assigned  
+   b. After the revisions of successfully updated, traffic split is successfully created with the percentage weight we assigned  
    
    <img width="1169" alt="image" src="https://user-images.githubusercontent.com/25875242/198937104-c251d724-d553-415e-b9b9-6fc8d01ab7aa.png">
 
@@ -221,7 +221,7 @@ Read more about Container App Environments [here](https://learn.microsoft.com/en
 ***
 **Why is it relevant to the customer ?**    
 a. Nudge Marketblitz's developer team further to get familiar with the Azure command line and scripting options.  
-b. Addresses the customer's need for segementing their API suite - with few APIs for internal only use and others for external use.
+b. Addresses the customer's need for segmenting their API suite - with few APIs for internal only use and others for external use.
 
 ***
 
@@ -345,7 +345,7 @@ az containerapp revision list --name aca-hol-demo1 -g rg-spt-aca-hol1
 ````
 
 
-The latest revision is now getting 100 % of the ingress traffic; so let us split the ingress traffic between the latest and the revison name of the first revision we created. 
+The latest revision is now getting 100 % of the ingress traffic; so let us split the ingress traffic between the latest and the revision name of the first revision we created. 
 ```
 az containerapp ingress traffic set -n aca-hol-demo1 \
                 -g rg-spt-aca-hol1 \
@@ -367,7 +367,7 @@ After this command is executed, you get the following output depicting that the 
 2. Using the CLI - Inactivate one of the revisions and re-implement 50/50 split so that traffic is split between the green and pink revisions.
 3. Convert the above deployment to an internal only ingress using - _az cli_ .
 4. Discuss and explore options you have securing the Container App with a VNet.
-   If you are upto it - secure the Container App based on the options and choices you make. (Hint: You may need to create a new Container Apps Environment based on choices you make and then redeploy the app.)
+   If you are up to it - secure the Container App based on the options and choices you make. (Hint: You may need to create a new Container Apps Environment based on choices you make and then redeploy the app.)
 
 ***
 
@@ -390,7 +390,7 @@ b. The source code for the 3 container apps is from this Azure Sample for ACA - 
 ***
 **Why is it relevant to the customer ?**   
 
-Applies to the customer aspect where different teams own their set of core APIs but do have elements integrated usage - arising from Marketblitz's acquistion of 2 different companies.  
+Applies to the customer aspect where different teams own their set of core APIs but do have elements integrated usage - arising from Marketblitz's acquisition of 2 different companies.  
 
 ***
 
@@ -417,7 +417,7 @@ az containerapp create \
   --query configuration.ingress.fqdn
   
  ```
-  After the command is executed successfuly, make a note of the App Url that is emitted in output.  
+  After the command is executed successfully, make a note of the App Url that is emitted in output.  
 
 **2. Test the _inventoryapi_ Container App**  
 
@@ -440,7 +440,7 @@ az containerapp create \
   --ingress 'external'
   
  ```
-  After the command is executed successfuly, make a note of the App Url that is emitted in output.   
+  After the command is executed successfully, make a note of the App Url that is emitted in output.   
 
 **4. Test the _productsapi_  Container App**  
   In the Postman Client, enter the URI as depicted below for the HTTP GET call and the expected a result of a randomized collection of 10 product names with their       productId.  
@@ -462,11 +462,11 @@ az containerapp create \
   --ingress 'external'  
   
  ```
-  After the command is executed successfuly, make a note of the App Url that is emitted in output. 
+  After the command is executed successfully, make a note of the App Url that is emitted in output. 
 
 **6. Create and configure Environment Variables** 
 
-In order for the UI store front Contaniner App - store to utilize the data obatined from the 2 backend API Container Apps - inventoryapi and productsapi -- let us create and configure the needed environment variables utilized by the **store** Container App.  
+In order for the UI store front Container App - store to utilize the data obtained from the 2 backend API Container Apps - inventoryapi and productsapi -- let us create and configure the needed environment variables utilized by the **store** Container App.  
 
 ```
 # Create the value needed for the  - InventoryApi - environment variable
@@ -565,7 +565,7 @@ e. After you click _Create_ a new revision is deployed for the Container App and
 ***
 **Why is it relevant to the customer ?**   
 
-Marketblitz's lean Ops team requires dashboards and insights into performance / operational metrics of the API suite but without them having to sping up and manage dashboards.  
+Marketblitz's lean Ops team requires dashboards and insights into performance / operational metrics of the API suite but without them having to spin up and manage dashboards.  
 
 
 ***
