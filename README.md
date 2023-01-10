@@ -383,14 +383,14 @@ After this command is executed, you get the following output depicting that the 
 2. Optionally, work through and complete the listed challenge(s).  
 
 **NOTE:**  -  
-a. Please note that the container images for the 2 APIs and 1 UI - is pulled from a public Docker repository in this lab.    
+a. Please note that the container images for the 2 APIs and 1 UI - are pulled from a public Docker repository in this lab.    
    If you choose to utilize your own container image repository, utilize the [Lab3\src] folder and the associated Dockerfiles to build and push the images to your          container registry of choice / repository and substitute the values in the relevant steps.  
 
-b. The source code for the 3 container apps is from this Azure Sample for ACA - https://github.com/Azure-Samples/dotNET-FrontEnd-to-BackEnd-on-Azure-Container-Apps  
+b. The source code for the 3 container apps used in the lab to follow is taken from the following sample: - https://github.com/Azure-Samples/dotNET-FrontEnd-to-BackEnd-on-Azure-Container-Apps  
 ***
 **Why is it relevant to the customer ?**   
 
-Applies to the customer aspect where different teams own their set of core APIs but do have elements integrated usage - arising from Marketblitz's acquisition of 2 different companies.  
+Applies to the customer scenario  where different teams own their set of core APIs but there is a need for API integration and cross-service usage - arising from Marketblitz's acquisition of 2 different companies.  
 
 ***
 
@@ -466,7 +466,7 @@ az containerapp create \
 
 **6. Create and configure Environment Variables** 
 
-In order for the UI store front Container App - store to utilize the data obtained from the 2 backend API Container Apps - inventoryapi and productsapi -- let us create and configure the needed environment variables utilized by the **store** Container App.  
+In order for the UI store front Container App - to utilize the data obtained from the 2 backend API Container Apps - inventoryapi and productsapi -- we must create and set the  environment variables expected within the **store** Container App.  
 
 ```
 # Create the value needed for the  - InventoryApi - environment variable
@@ -491,6 +491,7 @@ az containerapp update -n store -g $RESOURCE_GROUP  --set-env-var  "ProductsApi=
 
 **7. Test the integrated UI by navigating to the App Url of the _store_ Container App - our UI frontend** 
 
+Navigate to the App Url of the _store_ Container App.  
 You should see the following page render with the _Campaign Product_ data being obtained from the _productsapi_ Container App and the _Inventory_ column data being obtained from the _inventoryapi_ Container App. 
 
 <img width="902" alt="image" src="https://user-images.githubusercontent.com/25875242/199593495-e1a5af7c-84f7-4530-aa87-f6a3fc2d5208.png">
@@ -594,8 +595,8 @@ Marketblitz's lean Ops team requires dashboards and insights into performance / 
    
    <img width="674" alt="image" src="https://user-images.githubusercontent.com/25875242/199999434-311e2b2f-c629-4ac1-a367-606c11528ff9.png">
    
-   c. We intend to import this [Grafana Dashboard](https://grafana.com/grafana/dashboards/16592-azure-container-apps-container-app-view/)  -   
-      So, navigate to the link and _Copy ID to clipboard_  and  _Load_ it as shown below 
+   c. We will now import the [Grafana Dashboard](https://grafana.com/grafana/dashboards/16592-azure-container-apps-container-app-view/)  -   
+      So, navigate to the above link and click on _Copy ID to clipboard_ (the ID is currently 16592) and  _Load_ it as shown below -  
       
       <img width="953" alt="image" src="https://user-images.githubusercontent.com/25875242/200004813-b3c1718b-c86a-457c-bc8d-69bb2e68f297.png">
 
